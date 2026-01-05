@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <div>
-        <p>Helloge world!</p>
+        <p className="text-2xl font-bold">Helloge world!</p>
       </div>
     </>
   )
