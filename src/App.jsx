@@ -1,7 +1,7 @@
 import './App.css'
 
 // Components
-import Nav from './components/Nav'
+import Nav from './components/Navbar/Nav.jsx'
 
 export default function App() {
 
