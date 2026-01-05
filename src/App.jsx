@@ -1,11 +1,16 @@
 import './App.css'
 
+// Components
+import Nav from './components/Nav'
+
 export default function App() {
 
   return (
     <>
+      <Nav />
+
       <div>
-        <p className="text-2xl font-bold">Helloge world!</p>
+        <p className="">Helloge world!</p>
       </div>
     </>
   )
