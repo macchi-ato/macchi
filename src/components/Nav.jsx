@@ -1,9 +1,11 @@
+import './Nav.css'
+
 export default function Nav() {
     return (
-        <nav className="">
-            <h2>Current Page</h2>
+        <nav className="nav-container">
+            <span>Current Page</span>
 
-            <span>Menu</span>
+            <span>Menu Items</span>
         </nav> 
     )
 }
