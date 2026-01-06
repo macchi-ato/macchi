@@ -3,9 +3,13 @@
     grid-template-columns: 1fr 2fr;
     gap: 12px;
     align-items: start;
+    margin-top: 160px;
 }
 
 .home-profile {
+    position: sticky;
+    top: calc(12px + 60px + 12px); /* (padding + nav height + nav margin) */
+    z-index: 10;
     height: 480px;
     border: 1px solid gray;
     border-radius: 4px;
