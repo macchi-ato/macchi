@@ -51,10 +51,12 @@
 
 .intro-container p {
     font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .home-intro span {
     text-align: right;
+    font-size: 0.8rem;
 }
 
 .home-content h2 {
