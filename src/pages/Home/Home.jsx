@@ -19,7 +19,7 @@ export default function Home() {
                     <span>More {`->`}</span>
                 </section>
 
-                <h2>Recent Projects</h2>
+                <h2 id="projects-header">Recent Projects</h2>
                 <section className="home-projects">
                     <div>Project 1</div>
                     <div>Project 2</div>

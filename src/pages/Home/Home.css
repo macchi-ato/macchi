@@ -50,7 +50,7 @@
 }
 
 .intro-container h1 {
-    color: #edede9;
+    color: var(--color-highlight);
 }
 
 #intro-name {
@@ -72,6 +72,10 @@
     width: 100%;
     margin: 0;
     border-bottom: 2px solid var(--color-border);
+}
+
+#projects-header {
+    color: var(--color-highlight);
 }
 
 .home-projects {
