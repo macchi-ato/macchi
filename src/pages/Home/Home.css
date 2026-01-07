@@ -1,14 +1,14 @@
 .home-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 12px;
+    gap: var(--gap-size);
     align-items: start;
     margin-top: 0;
 }
 
 .home-profile {
     position: sticky;
-    top: calc(12px + 60px + 12px); /* (app padding + nav height + nav margin) */
+    top: calc(var(--gap-size) + 60px + var(--gap-size)); /* (app padding + nav height + nav margin) */
     z-index: 10;
     height: 480px;
     border: 1px solid gray;
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: var(--gap-size);
     padding-right: 2px;
 }
 
@@ -43,7 +43,7 @@
 .home-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: var(--gap-size);
     width: 100%;
 }
 
@@ -62,7 +62,7 @@
 .home-extra {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: var(--gap-size);
     width: 100%;
 }
 
