@@ -7,6 +7,7 @@
   --color-bg: #242424;
   --color-primary: #ce4257;
   --color-secondary: #ff7f51;
+  --color-border: rgba(245, 235, 224, 0.2);
 
   font-family: 'JetBrains Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -11,7 +11,7 @@
     top: calc(var(--gap-size) + 60px + var(--gap-size)); /* (app padding + nav height + nav margin) */
     z-index: 10;
     height: 480px;
-    border: 1px solid gray;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
 }
 
@@ -40,7 +40,7 @@
     min-height: 360px;
     box-sizing: border-box;
     padding: var(--gap-size);
-    border: 1px solid gray;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
 }
 
@@ -71,7 +71,7 @@
     text-align: start;
     width: 100%;
     margin: 0;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid var(--color-border);
 }
 
 .home-projects {
@@ -83,7 +83,7 @@
 
 .home-projects > * {
     min-height: 360px;
-    border: 1px solid gray;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
 }
 
@@ -102,7 +102,7 @@
 
 .home-extra > * {
     min-height: 280px;
-    border: 1px solid gray;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
 }
 
