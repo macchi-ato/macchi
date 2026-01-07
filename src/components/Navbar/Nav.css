@@ -1,18 +1,21 @@
 .nav-container {
     position: sticky;
-    top: 12px;
+    top: 0;
     z-index: 20;
+    place-content: end;
+    min-height: 72px;
+    margin-bottom: 12px;
+    background-color: #242424;
+}
 
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    height: 60px;
+    min-height: 60px;
     box-sizing: border-box;
     padding: 12px;
-
-    background-color: #242424;
     border: 1px solid gray;
     border-radius: 4px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);

@@ -3,9 +3,11 @@ import './Nav.css'
 export default function Nav() {
     return (
         <nav className="nav-container">
-            <span>Current Page</span>
+            <div className="navbar">
+                <span>Current Page</span>
 
-            <span>Menu Items</span>
+                <span>Menu Items</span>
+            </div>
         </nav> 
     )
 }
