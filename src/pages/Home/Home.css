@@ -49,14 +49,22 @@
     margin: 0 0 1.5rem;
 }
 
+.intro-container h1 {
+    color: #edede9;
+}
+
+#intro-name {
+    font-size: 2rem;
+}
+
 .intro-container p {
     font-size: 1.2rem;
-    line-height: 1.8rem;
 }
 
 .home-intro span {
     text-align: right;
     font-size: 0.8rem;
+    color: var(--color-primary);
 }
 
 .home-content h2 {

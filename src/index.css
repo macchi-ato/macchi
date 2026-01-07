@@ -3,13 +3,18 @@
 :root {
   --gap-size: 16px;
 
+  --color-text: #f5ebe0;
+  --color-bg: #242424;
+  --color-primary: #ce4257;
+  --color-secondary: #ff7f51;
+
   font-family: 'JetBrains Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 body {
