@@ -38,6 +38,7 @@
     justify-content: space-between;
     min-height: 360px;
     box-sizing: border-box;
+    margin-bottom: var(--gap-size);
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
     border-radius: 4px;
@@ -66,14 +67,11 @@
     color: var(--color-primary);
 }
 
-.home-content h2 {
+#projects-header {
     text-align: start;
     width: 100%;
     margin: 0;
-    border-bottom: 2px solid var(--color-border);
-}
-
-#projects-header {
+    border-bottom: 1px solid var(--color-border);
     color: var(--color-highlight);
 }
 
