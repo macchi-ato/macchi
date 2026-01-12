@@ -10,6 +10,8 @@
   --color-secondary: #ff7f51;
   --color-border: rgba(245, 235, 224, 0.2);
 
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
   font-family: 'JetBrains Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
