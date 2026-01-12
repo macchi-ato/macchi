@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <aside className="home-profile">
-                <img src={profileImg} alt="Profile" className="profile-img" />
+                <img src={profileImg} alt="Profile" id="profile-img" />
             </aside>
 
             <main className="home-content">
