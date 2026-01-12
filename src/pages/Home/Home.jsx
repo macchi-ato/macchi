@@ -6,6 +6,12 @@ export default function Home() {
         <div className="home-container">
             <aside className="home-profile">
                 <img src={profileImg} alt="Profile" id="profile-img" />
+
+                <div className="profile-links">
+                    <span>Github</span>
+                    <span>LinkedIn</span>
+                    <span>Email</span>
+                </div>
             </aside>
 
             <main className="home-content">
