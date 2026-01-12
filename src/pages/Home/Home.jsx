@@ -1,10 +1,11 @@
 import './Home.css'
+import profileImg from '../../assets/shanks.jpg'
 
 export default function Home() {
     return (
         <div className="home-container">
             <aside className="home-profile">
-                Profile
+                <img src={profileImg} alt="Profile" className="profile-img" />
             </aside>
 
             <main className="home-content">
