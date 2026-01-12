@@ -11,9 +11,10 @@
     top: calc(var(--gap-size) + 60px + var(--gap-size)); /* (app padding + nav height + nav margin) */
     z-index: 10;
     min-height: 480px;
+    padding: var(--gap-size);
     border: 1px solid var(--color-border);
     border-radius: 4px;
-    padding: var(--gap-size);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 #profile-img {
@@ -50,6 +51,7 @@
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
     border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .intro-container > * {
@@ -94,6 +96,7 @@
     min-height: 360px;
     border: 1px solid var(--color-border);
     border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 800px) {
@@ -113,6 +116,7 @@
     min-height: 280px;
     border: 1px solid var(--color-border);
     border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 600px) {
