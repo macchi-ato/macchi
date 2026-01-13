@@ -28,7 +28,7 @@
     color: var(--color-highlight);
 }
 
-#cursor {
+#prompt-cursor {
     display: inline-block;
     width: 8px;
     height: 1.2rem;
