@@ -32,7 +32,11 @@ export default function Nav() {
                     <span id="prompt-cursor"></span>
                 </span>
 
-                <span>Menu</span>
+                <span className="menu-items">
+                    <span>About</span>
+                    <span>Projects</span>
+                    <span>Resume</span>
+                </span>
             </div>
         </nav> 
     )
