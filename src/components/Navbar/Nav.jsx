@@ -27,7 +27,7 @@ export default function Nav() {
     return (
         <nav className="nav-container">
             <div className="navbar">
-                <span>{currentTime} macchi ~/</span>
+                <span className="nav-prompt">{currentTime} ~/<span id="cursor"></span></span>
 
                 <span>Menu</span>
             </div>

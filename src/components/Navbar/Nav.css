@@ -21,6 +21,27 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
-.navbar > * {
+.nav-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-highlight);
+}
+
+#cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2rem;
+    margin-left: 4px;
+    background-color: var(--color-primary);
+    animation: blink 1.3s infinite;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
 }
