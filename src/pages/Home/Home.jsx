@@ -37,7 +37,8 @@ export default function Home() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas error temporibus atque deleniti ad illo ea, quibusdam suscipit dolor, sequi nisi autem et quidem, facere impedit. Nesciunt reprehenderit impedit nostrum.
                         </p>
                     </div>
-                    <span>More {`->`}</span>
+
+                    <span id="intro-link">More {`->`}</span>
                 </section>
 
                 <h2 id="projects-header">Recent Projects</h2>
