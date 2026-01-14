@@ -53,8 +53,8 @@ export default function Home() {
                     </div>
 
                     <div className="projects">
-                        <div>Project 1</div>
-                        <div>Project 2</div>
+                        <div id="project">Project 1</div>
+                        <div id="project">Project 2</div>
                     </div>
                 </section>
 
