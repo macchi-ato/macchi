@@ -140,6 +140,15 @@
     margin: 0;
 }
 
+#projects-header h2 {
+    margin: 0 4px;
+}
+
+#projects-header span {
+    letter-spacing: 2px;
+    color: var(--color-primary);    
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
