@@ -59,6 +59,11 @@
     width: 24px;
     height: 24px;
     color: var(--color-highlight);
+    transition: color .3s ease;
+}
+
+.profile-link:hover svg {
+    color: var(--color-primary);
 }
 
 @media (max-width: 1000px) {
