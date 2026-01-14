@@ -1,5 +1,5 @@
 import './Project.css'
-import projectImg from '../../assets/shanks.jpg'
+import projectImg from '../../assets/theChip.jpg'
 
 export default function Project({ title }) {
     return (
