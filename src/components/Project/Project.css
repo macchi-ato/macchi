@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    gap: var(--gap-size);
     min-height: 360px;
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
@@ -19,7 +20,7 @@
 
 #project-img {
     width: 100%;
-    max-height: 240px;
+    max-height: 280px;
     object-fit: cover;
     border-radius: 4px;
     transition: transform .3s ease;
@@ -38,16 +39,26 @@
 }
 
 #project-title {
-    margin-bottom: calc(var(--gap-size) / 2);
+    margin-bottom: calc(var(--gap-size) * 2);
     color: var(--color-highlight);
     transition: color .3s ease;
 }
 
 #project-about {
+    margin-bottom: calc(var(--gap-size) / 2);
     font-size: 0.8rem;
     color: var(--color-text);
 }
 
 .project-card:hover #project-title {
     color: var(--color-primary);
+}
+
+#project-language {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px;
+    color: var(--color-highlight);
+    background-color: rgb(26, 26, 26);
+    border-radius: 4px;
 }

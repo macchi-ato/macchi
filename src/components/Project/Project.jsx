@@ -9,6 +9,7 @@ export default function Project({ title }) {
             <div className="project-description">
                 <h3 id="project-title">{title}</h3>
                 <p id="project-about">This is a just a testing description.</p>
+                <span id="project-language">JavaScript</span>
             </div>
         </div>
     )
