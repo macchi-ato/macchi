@@ -1,5 +1,6 @@
 import './Home.css'
 import profileImg from '../../assets/shanks.jpg'
+import Project from '../../components/Project/Project'
 
 export default function Home() {
     return (
@@ -53,8 +54,8 @@ export default function Home() {
                     </div>
 
                     <div className="projects">
-                        <div id="project">Project 1</div>
-                        <div id="project">Project 2</div>
+                        <Project title="Project 1" />
+                        <Project title="Project 2" />
                     </div>
                 </section>
 
