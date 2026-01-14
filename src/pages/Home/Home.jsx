@@ -38,7 +38,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <span className="arrow-link">More <span id="arrow">{`->`}</span></span>
+                    <a className="arrow-link">More <span id="arrow">{`->`}</span></a>
                 </section>
 
                 <section className="home-projects">
@@ -49,7 +49,7 @@ export default function Home() {
                             <span>{`/>`}</span>
                         </div>
                         
-                        <span className="arrow-link">View All <span id="arrow">{`->`}</span></span>
+                        <a className="arrow-link">View All <span id="arrow">{`->`}</span></a>
                     </div>
 
                     <div className="projects">

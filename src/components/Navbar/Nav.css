@@ -44,12 +44,12 @@
     }
 }
 
-.menu-items span{
+.menu-items a{
     margin-left: var(--gap-size);
     cursor: pointer;
     transition: color 0.4s ease;
 }
 
-.menu-items span:hover{
+.menu-items a:hover{
     color: var(--color-primary);
 }

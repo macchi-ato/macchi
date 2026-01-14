@@ -27,16 +27,16 @@ export default function Nav() {
     return (
         <nav className="nav-container">
             <div className="navbar">
-                <span className="nav-prompt">
+                <a className="nav-prompt">
                     <span id="prompt-time">{currentTime} ~/</span>
                     <span id="prompt-cursor"></span>
-                </span>
+                </a>
 
-                <span className="menu-items">
-                    <span>About</span>
-                    <span>Projects</span>
-                    <span>Resume</span>
-                </span>
+                <div className="menu-items">
+                    <a>About</a>
+                    <a>Projects</a>
+                    <a>Resume</a>
+                </div>
             </div>
         </nav> 
     )
