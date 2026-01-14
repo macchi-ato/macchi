@@ -1,6 +1,6 @@
-# Macchi v1
+# macchi v1
 
-I hope that with this website can answer two questions:
+The first iteration of my portfolio website.
 
 
-"who is Martin Vidal?" and "does he have the skills we're looking for?"
+Thank you for stopping by! any form of constructive criticism you may have is welcome.

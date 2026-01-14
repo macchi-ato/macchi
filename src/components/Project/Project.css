@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    
     min-height: 360px;
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
