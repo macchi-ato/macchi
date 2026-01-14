@@ -42,10 +42,14 @@ export default function Home() {
                 </section>
 
                 <section className="home-projects">
-                    <div id="projects-header">
-                        <span>{`<`}</span>
-                        <h2 >Recent Projects</h2>
-                        <span>{`/>`}</span>
+                    <div className="header-container">
+                        <div id="projects-header">
+                            <span>{`<`}</span>
+                            <h2>Recent Projects</h2>
+                            <span>{`/>`}</span>
+                        </div>
+                        
+                        <span id="intro-link">View All {`->`}</span>
                     </div>
 
                     <div className="projects">

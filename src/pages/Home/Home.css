@@ -122,11 +122,17 @@
     margin-bottom: calc(var(--gap-size) * 4);
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dotted var(--color-border);
+}
+
 #projects-header {
     display: flex;
     justify-content: start;
     align-items: center;
-    border-bottom: 2px dotted var(--color-border);
     color: var(--color-highlight);
 }
 
