@@ -108,10 +108,19 @@
     font-size: 1.2rem;
 }
 
-#intro-link {
+.arrow-link {
     font-size: 0.8rem;
     color: var(--color-primary);
     cursor: pointer;
+}
+
+.arrow-link #arrow {
+    display: inline-block;
+    transition: transform .15s ease;
+}
+
+.arrow-link:hover #arrow {
+    transform: translateX(6px);
 }
 
 .home-projects {
@@ -134,10 +143,6 @@
     justify-content: start;
     align-items: center;
     color: var(--color-highlight);
-}
-
-#projects-header > * {
-    margin: 0;
 }
 
 #projects-header h2 {
