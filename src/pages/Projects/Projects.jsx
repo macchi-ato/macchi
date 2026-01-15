@@ -3,7 +3,7 @@ import { fetchGitHubRepos } from "../../services/githubService"
 import './Projects.css'
 
 // Project component
-import Project from '../../components/Project/Project'
+import Project from '../../components/ProjectCard/ProjectCard'
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
 
 export default function Projects() {

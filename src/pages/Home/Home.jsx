@@ -5,9 +5,8 @@ import './Home.css'
 import profileImg from '../../assets/shanks.jpg'
 
 // Components
-import Project from '../../components/Project/Project'
+import Project from '../../components/ProjectCard/ProjectCard'
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
-
 
 export default function Home() {
     const [repos, setRepos] = useState([])

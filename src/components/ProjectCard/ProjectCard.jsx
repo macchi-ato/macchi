@@ -1,4 +1,4 @@
-import './Project.css'
+import './ProjectCard.css'
 import projectImg from '../../assets/theChip.jpg'
 
 export default function Project({ title, description, language }) {
