@@ -46,9 +46,6 @@ export default function Projects() {
     if (error) {
         return (
             <div className="projects-container">
-                <div className="projects-header">
-                    <h1>All Projects</h1>
-                </div>
                 <div className="error-message">
                     <p>{error}</p>
                 </div>
