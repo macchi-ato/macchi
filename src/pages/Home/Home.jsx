@@ -82,20 +82,22 @@ export default function Home() {
                         <Link to="/projects" className="arrow-link">View All <span id="arrow">{`->`}</span></Link>
                     </div>
 
-                    {loading ? ( <LoadingSpinner /> ) : (
-                        <div className="projects">
-                            {error ? (
-                                <div className="projects-error">
-                                    <p>{error}</p>
-                                </div>
-                            ) : repos.map((repo) => (
-                                <Project
-                                    key={repo.id}
-                                    title={repo.name}
-                                    description={repo.description}
-                                    language={repo.language}
-                                />
-                            ))}
+                    {loading ? ( 
+                        <LoadingSpinner /> 
+                    ) : (
+                    error ? (
+                        <div className="home-projects-error">
+                            <p>{error}</p>
+                        </div>
+                    ) : <div className="projects">
+                        {repos.map((repo) => (
+                            <Project
+                                key={repo.id}
+                                title={repo.name}
+                                description={repo.description}
+                                language={repo.language}
+                            />  
+                        ))}
                         </div>
                     )}
                 </section>
