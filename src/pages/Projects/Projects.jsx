@@ -65,6 +65,8 @@ export default function Projects() {
                     <Project
                         key={repo.id}
                         title={repo.name}
+                        description={repo.description}
+                        language={repo.language}
                     />
                 ))}
             </div>
