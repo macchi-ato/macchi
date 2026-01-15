@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 import profileImg from '../../assets/shanks.jpg'
 import Project from '../../components/Project/Project'
@@ -39,7 +40,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <a className="arrow-link">More <span id="arrow">{`->`}</span></a>
+                    <Link to="/about" className="arrow-link">More <span id="arrow">{`->`}</span></Link>
                 </section>
 
                 <section className="home-projects">
@@ -50,7 +51,7 @@ export default function Home() {
                             <span>{`/>`}</span>
                         </div>
                         
-                        <a className="arrow-link">View All <span id="arrow">{`->`}</span></a>
+                        <Link to="/projects" className="arrow-link">View All <span id="arrow">{`->`}</span></Link>
                     </div>
 
                     <div className="projects">
