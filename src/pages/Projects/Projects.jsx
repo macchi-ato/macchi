@@ -8,6 +8,7 @@ import Project from '../../components/Project/Project'
 export default function Projects() {
     const [loading, setLoading] = useState(true)
     const [repos, setRepos] = useState([])
+    const [error, setError] = useState(null)
 
     const loadRepos = async () => {
         try {
@@ -37,6 +38,19 @@ export default function Projects() {
                 <div className="loading-spinner">
                     <div className="spinner"></div>
                     <p>Loading projects...</p>
+                </div>
+            </div>
+        )
+    }
+
+    if (error) {
+        return (
+            <div className="projects-container">
+                <div className="projects-header">
+                    <h1>All Projects</h1>
+                </div>
+                <div className="error-message">
+                    <p>{error}</p>
                 </div>
             </div>
         )
