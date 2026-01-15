@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Nav.css'
 
 export default function Nav() {
@@ -27,14 +28,14 @@ export default function Nav() {
     return (
         <nav className="nav-container">
             <div className="navbar">
-                <a className="nav-prompt">
+                <Link to="/" className="nav-prompt">
                     <span id="prompt-time">{currentTime} ~/</span>
                     <span id="prompt-cursor"></span>
-                </a>
+                </Link>
 
                 <div className="menu-items">
-                    <a>About</a>
-                    <a>Projects</a>
+                    <Link to="/about">About</Link>
+                    <Link to="/projects">Projects</Link>
                     <a>Resume</a>
                 </div>
             </div>

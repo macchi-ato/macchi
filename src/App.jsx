@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // Components
@@ -10,12 +11,14 @@ import Home from './pages/Home/Home.jsx'
 export default function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Nav />
 
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
 
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
