@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom'
 import { fetchGitHubRepos } from '../../services/githubService'
 import './Home.css'
 import profileImg from '../../assets/shanks.jpg'
+
+// Components
 import Project from '../../components/Project/Project'
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
 
 
 export default function Home() {
@@ -19,7 +22,7 @@ export default function Home() {
                 setRepos(data.slice(0, 2))
                 setError(null)
             } catch (err) {
-                setError('Failed to load projects')
+                setError("Failed to load projects")
                 console.error(err)
             } finally {
                 setLoading(false)
@@ -79,31 +82,22 @@ export default function Home() {
                         <Link to="/projects" className="arrow-link">View All <span id="arrow">{`->`}</span></Link>
                     </div>
 
-                    <div className="projects">
-                        {loading ? (
-                            <div className="projects-loading">
-                                <div className="spinner-small"></div>
-                                <p>Loading projects...</p>
-                            </div>
-                        ) : error ? (
-                            <div className="projects-error">
-                                <p>{error}</p>
-                            </div>
-                        ) : repos.length > 0 ? (
-                            repos.map((repo) => (
+                    {loading ? ( <LoadingSpinner /> ) : (
+                        <div className="projects">
+                            {error ? (
+                                <div className="projects-error">
+                                    <p>{error}</p>
+                                </div>
+                            ) : repos.map((repo) => (
                                 <Project
                                     key={repo.id}
                                     title={repo.name}
                                     description={repo.description}
                                     language={repo.language}
-                                    url={repo.html_url}
-                                    homepage={repo.homepage}
                                 />
-                            ))
-                        ) : (
-                            <p>No projects found.</p>
-                        )}
-                    </div>
+                            ))}
+                        </div>
+                    )}
                 </section>
 
                 <section className="home-extra">
