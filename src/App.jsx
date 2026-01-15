@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer.jsx'
 
 // Pages
 import Home from './pages/Home/Home.jsx'
+import Projects from './pages/Projects/Projects.jsx'
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       <Footer />
