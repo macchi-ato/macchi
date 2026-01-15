@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     color: var(--color-highlight);
 }
 
@@ -44,12 +45,14 @@
     }
 }
 
-.menu-items a{
+.menu-items a { 
     margin-left: var(--gap-size);
+    color: var(--color-highlight);
+    text-decoration: none;
     cursor: pointer;
     transition: color 0.4s ease;
 }
 
-.menu-items a:hover{
+.menu-items a:hover {
     color: var(--color-primary);
 }
