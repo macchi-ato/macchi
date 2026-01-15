@@ -1,9 +1,34 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { fetchGitHubRepos } from '../../services/githubService'
 import './Home.css'
 import profileImg from '../../assets/shanks.jpg'
 import Project from '../../components/Project/Project'
 
+
 export default function Home() {
+    const [repos, setRepos] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+
+    useEffect(() => {
+        const loadRepos = async () => {
+            try {
+                setLoading(true)
+                const data = await fetchGitHubRepos()
+                setRepos(data.slice(0, 2))
+                setError(null)
+            } catch (err) {
+                setError('Failed to load projects')
+                console.error(err)
+            } finally {
+                setLoading(false)
+            }
+        }
+
+        loadRepos()
+    }, [])
+
     return (
         <div className="home-container">
             <aside className="home-profile">
@@ -55,8 +80,29 @@ export default function Home() {
                     </div>
 
                     <div className="projects">
-                        <Project title="Project 1" />
-                        <Project title="Project 2" />
+                        {loading ? (
+                            <div className="projects-loading">
+                                <div className="spinner-small"></div>
+                                <p>Loading projects...</p>
+                            </div>
+                        ) : error ? (
+                            <div className="projects-error">
+                                <p>{error}</p>
+                            </div>
+                        ) : repos.length > 0 ? (
+                            repos.map((repo) => (
+                                <Project
+                                    key={repo.id}
+                                    title={repo.name}
+                                    description={repo.description}
+                                    language={repo.language}
+                                    url={repo.html_url}
+                                    homepage={repo.homepage}
+                                />
+                            ))
+                        ) : (
+                            <p>No projects found.</p>
+                        )}
                     </div>
                 </section>
 
