@@ -48,7 +48,7 @@ export default function Projects() {
     return (
         <div className="projects-container">
             <div className="projects-header">
-                <h1>All Projects</h1>
+                <h1>Projects</h1>
                 <p>Repositories: {repos.length}</p>
             </div>
 
