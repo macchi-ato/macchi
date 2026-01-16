@@ -17,6 +17,9 @@
     box-sizing: border-box;
     padding: var(--gap-size);
     border-radius: 4px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-prompt {
