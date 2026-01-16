@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './Nav.css'
 
 export default function Nav() {
     const [currentTime, setCurrentTime] = useState("")
+    const location = useLocation()
+    
+    const getCurrentPath = () => {
+        const path = location.pathname === "/" ? "" : location.pathname.slice(1)
+        return path
+    }
 
     const getCurrentTime = () => {
         let now = new Date()
@@ -29,7 +35,7 @@ export default function Nav() {
         <nav className="nav-container">
             <div className="navbar">
                 <Link to="/" className="nav-prompt">
-                    <span>{currentTime} <span id="prompt-tail">~/</span></span>
+                    <span>{currentTime} <span id="prompt-tail">~/{getCurrentPath()}</span></span>
                     <span id="prompt-cursor"></span>
                 </Link>
 
