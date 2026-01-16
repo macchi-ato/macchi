@@ -41,7 +41,8 @@
 #project-title {
     margin: 0;
     color: var(--color-primary);
-    transition: transform .3s ease;
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom .3s ease;
 }
 
 .project-description {
@@ -49,7 +50,7 @@
 }
 
 .project-card:hover #project-title {
-    transform: translateY(-4px);
+    border-bottom: 1px dashed var(--color-primary);
 }
 
 #project-about {
