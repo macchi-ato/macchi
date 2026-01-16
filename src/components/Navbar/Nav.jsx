@@ -35,7 +35,7 @@ export default function Nav() {
         <nav className="nav-container">
             <div className="navbar">
                 <Link to="/" className="nav-prompt">
-                    <span>{currentTime} <span id="prompt-tail">~/{getCurrentPath()}</span></span>
+                    <span id="prompt-time">{currentTime} <span id="prompt-tail">~/{getCurrentPath()}</span></span>
                     <span id="prompt-cursor"></span>
                 </Link>
 

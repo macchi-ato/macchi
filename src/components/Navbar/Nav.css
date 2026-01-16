@@ -27,6 +27,15 @@
     color: var(--color-highlight);
 }
 
+#prompt-time {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+#prompt-tail {
+    color: var(--color-highlight);
+}
+
 #prompt-cursor {
     display: inline-block;
     width: 8px;
@@ -50,9 +59,11 @@
     color: var(--color-highlight);
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.4s ease;
+    border-bottom: 1px dashed transparent;
+    transition: color .3s ease, border-bottom .3s ease;
 }
 
 .menu-items a:hover {
     color: var(--color-primary);
+    border-bottom: 1px dashed var(--color-primary);
 }
