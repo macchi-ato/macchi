@@ -21,21 +21,14 @@
 }
 
 .about-section {
+    text-align: left;
     width: 100%;
     min-height: 480px;
-    padding: var(--gap-size);
     box-sizing: border-box;
-}
-
-.about-section > * {
-    text-align: left;
-    margin: 0 0 1.5rem;
+    padding: var(--gap-size);
 }
 
 .about-section h1 {
+    margin: 0 0 var(--gap-size);
     color: var(--color-highlight);
-}
-
-.about-section p {
-    font-size: 1.2rem;
 }
