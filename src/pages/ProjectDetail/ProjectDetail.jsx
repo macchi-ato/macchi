@@ -5,15 +5,19 @@ import './ProjectDetail.css'
 
 // Components
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function ProjectDetail() {
     const [project, setProject] = useState({})
+    const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     const { id } = useParams()
     
     useEffect(() => {
         const loadRepos = async () => {
             try {
+                setLoading(true)
+
                 const data = await fetchGitHubRepos()
                 const selectedProject = data.find(proj => proj.name === id) // Filter through projects to find selected one
                 setProject(selectedProject)
@@ -22,6 +26,8 @@ export default function ProjectDetail() {
             } catch (err) {
                 setError("Failed to load project")
                 console.error(err)
+            } finally {
+                setLoading(false)
             }
         }
 
@@ -29,16 +35,22 @@ export default function ProjectDetail() {
     }, [])
 
     return (
-        <div className="project-detail-container">
-            <ProjectCard title={project.name} description={project.description} language={project.language}/>
+        <>
+            {loading ? (
+                <LoadingSpinner />
+            ) : (
+                <div className="project-detail-container">
+                    <ProjectCard title={project.name} description={project.description} language={project.language}/>
 
-            <main className="project-detail-content">
-                <section className="project-detail-section">
-                    <h1>{project.name}</h1>
-                    <a>{project.url}</a>
-                    <p>Content coming soon...</p>
-                </section>
-            </main>
-        </div>
+                    <main className="project-detail-content">
+                        <section className="project-detail-section">
+                            <h1>{project.name}</h1>
+                            <a>{project.url}</a>
+                            <p>Content coming soon...</p>
+                        </section>
+                    </main>
+                </div>
+            )}
+        </>
     )
 }
