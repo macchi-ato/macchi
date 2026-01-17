@@ -1,0 +1,34 @@
+.project-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--gap-size);
+    align-items: start;
+    margin-top: 0;
+}
+
+@media (max-width: 1000px) {
+    .project-detail-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-detail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-size);
+}
+
+.project-detail-section {
+    text-align: left;
+    width: 100%;
+    min-height: 480px;
+    box-sizing: border-box;
+    padding: var(--gap-size);
+}
+
+.project-detail-section h1 {
+    margin: 0 0 var(--gap-size);
+    color: var(--color-highlight);
+}
