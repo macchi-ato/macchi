@@ -42,7 +42,13 @@ export default function Nav() {
                 <div className="menu-items">
                     <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
-                    <a>Resume</a>
+                    <a 
+                        href="/vidalgmartin_resume.pdf" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        Resume
+                    </a>
                 </div>
             </div>
         </nav> 
