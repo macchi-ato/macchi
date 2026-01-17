@@ -37,8 +37,11 @@ export default function ProjectDetail() {
     return (
         <>
             {loading ? (
-                <LoadingSpinner />
+                <LoadingSpinner /> 
             ) : (
+            error ? (
+                <p>{error}</p>
+            ) : 
                 <div className="project-detail-container">
                     <ProjectCard title={project.name} description={project.description} language={project.language}/>
 
