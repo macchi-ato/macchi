@@ -20,9 +20,13 @@ export default function ProjectDetail() {
 
                 const data = await fetchGitHubRepos()
                 const selectedProject = data.find(proj => proj.name === id) // Filter through projects to find selected one
-                setProject(selectedProject)
-
-                setError(null)
+                
+                if (!selectedProject) {
+                    setError("Project does not exist")
+                } else {
+                    setProject(selectedProject)
+                    setError(null)
+                }
             } catch (err) {
                 setError("Failed to load project")
                 console.error(err)
@@ -32,7 +36,7 @@ export default function ProjectDetail() {
         }
 
         loadRepos()
-    }, [])
+    }, [id])
 
     return (
         <>
@@ -48,7 +52,7 @@ export default function ProjectDetail() {
                     <main className="project-detail-content">
                         <section className="project-detail-section">
                             <h1>{project.name}</h1>
-                            <a>{project.url}</a>
+                            <a>{project.html_url}</a>
                             <p>Content coming soon...</p>
                         </section>
                     </main>
