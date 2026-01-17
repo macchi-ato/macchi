@@ -1,3 +1,7 @@
+#link-to-project {
+    text-decoration: none;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
