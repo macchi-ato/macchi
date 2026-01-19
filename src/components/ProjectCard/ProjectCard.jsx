@@ -1,6 +1,7 @@
 import './ProjectCard.css'
 import projectImg from '../../assets/theChip.jpg'
 import { Link } from "react-router-dom"
+import { GoTag } from "react-icons/go"
 
 export default function Project({ title, description, language }) {
 
@@ -14,7 +15,12 @@ export default function Project({ title, description, language }) {
 
                     <div className="project-description">
                         <p id="project-about">{description || "No description available."}</p>
-                        {language && <span id="project-language">{language}</span>}
+                        
+                        {language && 
+                            <div className="language-container">
+                                <GoTag size={20} aria-hidden="true" />
+                                <span id="project-language">{language}</span>
+                            </div>}
                     </div>
                 </div>
             </div>
