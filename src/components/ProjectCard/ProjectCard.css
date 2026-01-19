@@ -5,9 +5,10 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: start;
     gap: var(--gap-size);
+    height: 100%;
     min-height: 400px;
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
