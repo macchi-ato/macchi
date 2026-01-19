@@ -1,10 +1,10 @@
-import { useState,useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import { fetchGitHubRepos } from '../../services/githubService'
-import './ProjectDetail.css'
+import { useState,useEffect } from "react"
+import { useParams } from "react-router-dom"
+import { fetchGitHubRepos } from "../../services/githubService"
+import "./ProjectDetail.css"
 
-// Components
-import ProjectCard from '../../components/ProjectCard/ProjectCard'
+//components
+import ProjectCard from "../../components/ProjectCard/ProjectCard"
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function ProjectDetail() {

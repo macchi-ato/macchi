@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 import { fetchGitHubRepos } from "../../services/githubService"
-import './Projects.css'
+import "./Projects.css"
 import { GrProjects } from "react-icons/gr"
 
 // Project component
-import Project from '../../components/ProjectCard/ProjectCard'
-import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
+import Project from "../../components/ProjectCard/ProjectCard"
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function Projects() {
     const [loading, setLoading] = useState(true)

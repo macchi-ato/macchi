@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { fetchGitHubRepos } from '../../services/githubService'
-import './Home.css'
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import { fetchGitHubRepos } from "../../services/githubService"
+import "./Home.css"
 
-// Components
-import Project from '../../components/ProjectCard/ProjectCard'
-import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
-import ProfileCard from '../../components/ProfileCard/ProfileCard'
+//components
+import Project from "../../components/ProjectCard/ProjectCard"
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
+import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 export default function Home() {
     const [repos, setRepos] = useState([])

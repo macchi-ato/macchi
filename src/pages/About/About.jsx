@@ -1,5 +1,5 @@
-import './About.css'
-import ProfileCard from '../../components/ProfileCard/ProfileCard'
+import "./About.css"
+import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 export default function About() {
     return (

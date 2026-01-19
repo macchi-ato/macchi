@@ -1,8 +1,8 @@
-import './ProjectCard.css'
-import projectImg from '../../assets/theChip.jpg'
+import "./ProjectCard.css"
+import projectImg from "../../assets/theChip.jpg"
 import { Link } from "react-router-dom"
 import { GoTag } from "react-icons/go"
-import { getLanguageColor } from '../../utils/languageColors'
+import { getLanguageColor } from "../../utils/languageColors"
 
 export default function Project({ title, description, language }) {
 

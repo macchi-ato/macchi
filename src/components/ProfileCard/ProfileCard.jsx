@@ -1,6 +1,6 @@
-import './ProfileCard.css'
-import profileImg from '../../assets/shanks.jpg'
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import "./ProfileCard.css"
+import profileImg from "../../assets/shanks.jpg"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 export default function ProfileCard() {
     return (
