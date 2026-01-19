@@ -2,6 +2,7 @@ import './ProjectCard.css'
 import projectImg from '../../assets/theChip.jpg'
 import { Link } from "react-router-dom"
 import { GoTag } from "react-icons/go"
+import { getLanguageColor } from '../../utils/languageColors'
 
 export default function Project({ title, description, language }) {
 
@@ -19,7 +20,12 @@ export default function Project({ title, description, language }) {
                         {language && 
                             <div className="language-container">
                                 <GoTag size={20} aria-hidden="true" />
-                                <span id="project-language">{language}</span>
+                                <span 
+                                    id="project-language"
+                                    style={{ backgroundColor: getLanguageColor(language) }}
+                                >
+                                    {language}
+                                </span>
                             </div>}
                     </div>
                 </div>
