@@ -80,12 +80,12 @@ export default function Home() {
                 </section>
 
                 <section className="home-extra">
-                    <span>Loading...</span>
-                    <span>Loading...</span>
-                    <span>Loading...</span>
-                    <span>Loading...</span>
-                    <span>Loading...</span>
-                    <span>Loading...</span>
+                    <span>Coming Soon</span>
+                    <span>Coming Soon</span>
+                    <span>Coming Soon</span>
+                    <span>Coming Soon</span>
+                    <span>Coming Soon</span>
+                    <span>Coming Soon</span>
                 </section>
             </main>
         </div>
