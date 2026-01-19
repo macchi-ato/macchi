@@ -131,6 +131,8 @@
 
 .home-extra > * {
     min-height: 280px;
+    place-content: end;
+    color: var(--color-highlight);
     border: 1px solid var(--color-border);
     border-radius: 4px;
     box-shadow: var(--shadow);
