@@ -17,7 +17,7 @@ export default function ProfileCard() {
                 </a>
 
                 <a className="profile-link" href="mailto:vidalgmartin@hotmail.com" aria-label="Email">
-                    <FaEnvelope size={24} aria-hidden="true" />
+                    <FaEnvelope size={26} aria-hidden="true" />
                 </a>
             </div>
         </aside>
