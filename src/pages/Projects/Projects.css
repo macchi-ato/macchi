@@ -5,22 +5,36 @@
     align-items: center;
 }
 
-.projects-header {
+.projects-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
     width: 100%;
-    text-align: start;
-    margin-bottom: calc(var(--gap-size) * 2);
+    margin-bottom: var(--gap-size);
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.projects-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: calc(var(--gap-size) / 2);
+    color: var(--color-primary);
 }
 
 .projects-header h1 {
     font-size: 2.5rem;
-    margin: 0 0 calc(var(--gap-size) / 4);
-    color: var(--color-primary);
+    margin: 0;
 }
 
-.projects-header p {
+.projects-header-container p {
     text-align: start;
     margin: 0;
     color: var(--color-highlight);
+}
+
+.projects-header-container p span {
+    color: var(--color-primary);
 }
 
 .projects-grid {

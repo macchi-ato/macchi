@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchGitHubRepos } from "../../services/githubService"
 import './Projects.css'
+import { GrProjects } from "react-icons/gr"
 
 // Project component
 import Project from '../../components/ProjectCard/ProjectCard'
@@ -47,9 +48,13 @@ export default function Projects() {
 
     return (
         <div className="projects-container">
-            <div className="projects-header">
-                <h1>Projects</h1>
-                <p>Repositories: {repos.length}</p>
+            <div className="projects-header-container">
+                <div className="projects-header">
+                    <GrProjects size={32} />
+                    <h1> Projects</h1>
+                </div>
+                
+                <p>Repos: <span>{repos.length}</span></p>
             </div>
 
             <div className="projects-grid">
