@@ -1,5 +1,6 @@
 import './ProfileCard.css'
 import profileImg from '../../assets/shanks.jpg'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 export default function ProfileCard() {
     return (
@@ -8,21 +9,15 @@ export default function ProfileCard() {
 
             <div className="profile-links">
                 <a className="profile-link" href="https://github.com/macchi-ato" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M12 .297a12 12 0 00-3.793 23.4c.6.111.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.303-5.466-1.333-5.466-5.93 0-1.311.468-2.382 1.235-3.222-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 016.003 0c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.243 2.874.12 3.176.77.84 1.233 1.911 1.233 3.222 0 4.61-2.803 5.624-5.475 5.921.43.372.815 1.102.815 2.222 0 1.605-.015 2.896-.015 3.292 0 .32.216.694.825.576A12 12 0 0012 .297"></path>
-                    </svg>
+                    <FaGithub size={28} aria-hidden="true" />
                 </a>
 
                 <a className="profile-link" href="https://www.linkedin.com/in/martin-vidal-garibay-2b912929a/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.98h4V24h-4V8.98zM9 8.98h3.84v2.05h.05c.54-1.02 1.86-2.05 3.83-2.05 4.1 0 4.86 2.7 4.86 6.22V24h-4v-7.62c0-1.82-.03-4.16-2.53-4.16-2.54 0-2.93 1.99-2.93 4.04V24H9V8.98z" />
-                    </svg>
+                    <FaLinkedin size={28} aria-hidden="true" />
                 </a>
 
                 <a className="profile-link" href="mailto:vidalgmartin@hotmail.com" aria-label="Email">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M12 13.065L.75 4.5V19.5A1.5 1.5 0 002.25 21h19.5A1.5 1.5 0 0023.25 19.5V4.5L12 13.065zM12 10.935L23.25 2.5H.75L12 10.935z" />
-                    </svg>
+                    <FaEnvelope size={24} aria-hidden="true" />
                 </a>
             </div>
         </aside>
