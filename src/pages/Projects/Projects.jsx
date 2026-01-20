@@ -50,7 +50,7 @@ export default function Projects() {
         <div className="projects-container">
             <div className="projects-header-container">
                 <div className="projects-header">
-                    <GrProjects size={32} />
+                    <GrProjects size={24} />
                     <h1> Projects</h1>
                 </div>
                 
