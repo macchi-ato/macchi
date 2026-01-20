@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { fetchGitHubRepos } from "../../services/githubService"
+import { FiGithub } from "react-icons/fi"
 import "./ProjectDetail.css"
 
 //components
@@ -50,11 +51,16 @@ export default function ProjectDetail() {
                     <ProjectCard title={project.name} description={project.description} language={project.language}/>
 
                     <main className="project-detail-content">
-                        <section className="project-detail-section">
+                        <div className="project-detail-header">
                             <h1>{project.name}</h1>
-                            <a>{project.html_url}</a>
-                            <p>Content coming soon...</p>
-                        </section>
+                            <span>Created At</span>
+                            <a href={project.html_url} target="_blank"><FiGithub size={32} aria-hidden="true" /></a>
+                        </div>
+
+                        <div className="project-summary">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium aliquid odit accusantium a quam doloremque animi iusto. Fuga maxime eligendi omnis architecto? Architecto vel accusamus dolorem laudantium cum deserunt.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium aliquid odit accusantium a quam doloremque animi iusto. Fuga maxime eligendi omnis architecto? Architecto vel accusamus dolorem laudantium cum deserunt.</p>
+                        </div>
                     </main>
                 </div>
             )}

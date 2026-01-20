@@ -20,15 +20,35 @@
     gap: var(--gap-size);
 }
 
-.project-detail-section {
-    text-align: left;
+.project-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    line-height: 1;
     width: 100%;
-    min-height: 480px;
-    box-sizing: border-box;
-    padding: var(--gap-size);
+    padding-bottom: calc(var(--gap-size) / 4);
+    color: var(--color-highlight);
+    border-bottom: 1px dashed var(--color-border);
 }
 
-.project-detail-section h1 {
+.project-detail-header h1 {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.project-detail-header a {
+    color: var(--color-primary);
+    transition: scale .2s ease;
+}
+
+.project-detail-header a:hover {
+    scale: 1.1;
+}
+
+.project-summary {
+    text-align: left;
+}
+
+.project-summary p {
     margin: 0 0 var(--gap-size);
-    color: var(--color-highlight);
 }
