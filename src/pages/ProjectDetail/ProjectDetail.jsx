@@ -13,6 +13,16 @@ export default function ProjectDetail() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     const { id } = useParams()
+
+    // Convert project creation date into "month day, year" format
+    const formatDate = (dateString) => {
+        const date = new Date(dateString)
+        return date.toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: '2-digit' 
+        })
+    }
     
     useEffect(() => {
         const loadRepos = async () => {
@@ -53,7 +63,7 @@ export default function ProjectDetail() {
                     <main className="project-detail-content">
                         <div className="project-detail-header">
                             <h1>{project.name}</h1>
-                            <span>Created At</span>
+                            <span>{formatDate(project.created_at)}</span>
                             <a href={project.html_url} target="_blank"><FiGithub size={32} aria-hidden="true" /></a>
                         </div>
 
