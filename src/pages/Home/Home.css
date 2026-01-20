@@ -140,6 +140,12 @@
     box-shadow: var(--shadow);
 } 
 
+@media (max-width: 800px) {
+    .home-extra {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 600px) {
     .home-extra {
         grid-template-columns: 1fr;
