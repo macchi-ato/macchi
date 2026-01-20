@@ -4,6 +4,7 @@ import "./App.css"
 //components
 import Nav from "./components/Navbar/Nav.jsx"
 import Footer from "./components/Footer/Footer.jsx"
+import ScrollToTop from "./utils/ScrollToTop.jsx"
 
 //pages
 import Home from "./pages/Home/Home.jsx"
@@ -15,6 +16,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Nav />
 
       <div className="routes-container">
