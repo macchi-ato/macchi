@@ -1,9 +1,15 @@
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     gap: var(--gap-size);
     align-items: start;
-    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+.about-container > * {
+    flex: 1 1 400px;
+    max-width: 400px;
 }
 
 .about-content {
@@ -12,12 +18,12 @@
     justify-content: center;
     align-items: center;
     gap: var(--gap-size);
+    max-width: 480px;
 }
 
 .about-section {
     text-align: left;
     width: 100%;
-    min-height: 480px;
     box-sizing: border-box;
     padding: var(--gap-size);
 }
@@ -30,8 +36,5 @@
 @media (max-width: 1000px) {
     .about-container {
         grid-template-columns: 1fr;
-    }
-    .about-profile {
-        display: none;
     }
 }
