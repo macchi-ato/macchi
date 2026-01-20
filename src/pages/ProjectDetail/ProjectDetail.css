@@ -1,15 +1,15 @@
 .project-detail-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--gap-size);
+    display: flex;
+    justify-content: center;
     align-items: start;
+    gap: var(--gap-size);
     margin-top: 0;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
-    .project-detail-container {
-        grid-template-columns: 1fr;
-    }
+.project-detail-container > * {
+    flex: 1 1 360px;
+    max-width: 440px;
 }
 
 .project-detail-content {
