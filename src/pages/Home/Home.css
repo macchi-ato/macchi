@@ -77,7 +77,9 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    line-height: 1;
+    padding-bottom: calc(var(--gap-size) / 4);
     border-bottom: 2px dotted var(--color-border);
 }
 
