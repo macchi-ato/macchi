@@ -64,7 +64,7 @@ export default function ProjectDetail() {
                         <div className="project-detail-header">
                             <h1>{project.name}</h1>
                             <span>{formatDate(project.created_at)}</span>
-                            <a href={project.html_url} target="_blank"><FiGithub size={28} aria-hidden="true" /></a>
+                            <a href={project.html_url} target="_blank"><FiGithub size={24} aria-hidden="true" /></a>
                         </div>
 
                         <div className="project-summary">
