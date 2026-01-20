@@ -19,6 +19,8 @@
     justify-content: start;
     align-items: center;
     gap: calc(var(--gap-size) / 2);
+    line-height: 1;
+    padding-bottom: calc(var(--gap-size) / 2);
     color: var(--color-primary);
 }
 
