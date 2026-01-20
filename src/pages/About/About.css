@@ -6,12 +6,6 @@
     margin-top: 0;
 }
 
-@media (max-width: 1000px) {
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 .about-content {
     display: flex;
     flex-direction: column;
@@ -31,4 +25,10 @@
 .about-section h1 {
     margin: 0 0 var(--gap-size);
     color: var(--color-highlight);
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 }
