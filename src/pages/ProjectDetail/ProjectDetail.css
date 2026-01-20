@@ -36,6 +36,11 @@
     color: var(--color-primary);
 }
 
+.project-detail-header span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 .project-detail-header a {
     color: var(--color-primary);
     transition: scale .2s ease;
