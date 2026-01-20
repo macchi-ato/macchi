@@ -4,7 +4,9 @@ import ProfileCard from "../../components/ProfileCard/ProfileCard"
 export default function About() {
     return (
         <div className="about-container">
-            <ProfileCard />
+            <aside className="about-profile">
+                <ProfileCard />
+            </aside>
 
             <main className="about-content">
                 <section className="about-section">
