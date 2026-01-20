@@ -58,7 +58,7 @@ export default function ProjectDetail() {
                 <p>{error}</p>
             ) : 
                 <div className="project-detail-container">
-                    <ProjectCard title={project.name} description={project.description} language={project.language}/>
+                    <ProjectCard title={project.name} description={project.description} language={project.language} disableHover={true}/>
 
                     <main className="project-detail-content">
                         <div className="project-detail-header">

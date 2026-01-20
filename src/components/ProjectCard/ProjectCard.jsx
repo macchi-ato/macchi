@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 import { GoTag } from "react-icons/go"
 import { getLanguageColor } from "../../utils/languageColors"
 
-export default function Project({ title, description, language }) {
+export default function Project({ title, description, language, disableHover }) {
 
     return (
         <Link to={`/projects/${title}`} id="link-to-project">
-            <div className="project-card">
+            <div className={`project-card ${disableHover ? 'no-hover' : ''}`}>
                 <img src={projectImg} alt={title || "Project"} id="project-img" />
 
                 <div className="project-details">
