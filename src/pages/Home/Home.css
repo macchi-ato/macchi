@@ -6,6 +6,12 @@
     margin-top: 0;
 } 
 
+.home-profile {
+    position: sticky;
+    top: calc(var(--gap-size) + 60px + var(--gap-size)); /* (app padding + nav height + nav margin) */
+    z-index: 10;
+}
+
 .home-content {
     display: flex;
     flex-direction: column;
@@ -131,6 +137,9 @@
 @media (max-width: 1200px) {
     .home-container {
         grid-template-columns: 1fr;
+    }
+    .home-profile {
+        display: none;
     }
 }
 

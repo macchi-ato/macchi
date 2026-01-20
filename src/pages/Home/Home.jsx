@@ -33,7 +33,9 @@ export default function Home() {
 
     return (
         <div className="home-container">
-            <ProfileCard />
+            <aside className="home-profile">
+                <ProfileCard />
+            </aside>
 
             <main className="home-content">
                 <section className="home-intro">
