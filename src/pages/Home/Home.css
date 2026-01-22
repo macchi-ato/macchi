@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: end;
-    gap: var(--gap-size);
+    gap: calc(var(--gap-size) * 2);
     min-height: 480px;
     box-sizing: border-box;
     padding: var(--gap-size);
@@ -75,6 +75,10 @@
 
 .arrow-link:hover #arrow {
     transform: translateX(6px);
+}
+
+.about-arrow {
+    margin-right: calc(var(--gap-size) * 4);
 }
 
 .home-projects {

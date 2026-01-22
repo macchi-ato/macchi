@@ -44,7 +44,7 @@ export default function Home() {
                         <p>I’m a recent <span>Software Engineering graduate</span> focused on <span>full-stack development</span>. Right now, I’m improving my existing skills while gradually learning new ones, including <span>low-level programming</span> and systems fundamentals. I’m also continuing my education through <span>Georgia Tech’s OMSCS program</span> starting in Fall 2026, where I plan to dive deeper into operating systems and better understand how software behaves beneath the surface.</p>
                     </div>
 
-                    <Link to="/about" className="arrow-link">More <span id="arrow">{`->`}</span></Link>
+                    <Link to="/about" className="arrow-link about-arrow">More <span id="arrow">{`->`}</span></Link>
                 </section>
 
                 <section className="home-projects">
