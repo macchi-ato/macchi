@@ -170,4 +170,13 @@
     .home-extra {
         grid-template-columns: 1fr;
     }
+    .intro-container h1 {
+        font-size: 1.5rem;
+    }
+    .intro-container p {
+        font-size: 1rem;
+    }
+    #projects-header {
+        font-size: 0.8rem;
+    }
 }
