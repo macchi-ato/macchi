@@ -9,10 +9,12 @@ export default function About() {
             </aside>
 
             <main className="about-content">
-                <section className="about-section">
+                <div className="about-header">
                     <h1>About Me</h1>
-                    <p>Content coming soon...</p>
-                </section>
+                    <span>January 22, 2026</span>
+                </div>
+
+                <p>Coming soon...</p>
             </main>
         </div>
     )
