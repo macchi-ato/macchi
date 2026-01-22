@@ -41,7 +41,7 @@ export default function Home() {
                 <section className="home-intro">
                     <div className="intro-container">
                         <h1>Hello! I'm <span id="intro-name">Martin</span></h1>
-                        <p>I’m a recent Software Engineering graduate focused on full-stack development. Right now, I’m improving my existing skills while gradually learning new ones, including low-level programming and systems fundamentals. I’m also continuing my education through Georgia Tech’s OMSCS program starting in Fall 2026, where I plan to dive deeper into operating systems and better understand how software behaves beneath the surface.</p>
+                        <p>I’m a recent <span>Software Engineering graduate</span> focused on <span>full-stack development</span>. Right now, I’m improving my existing skills while gradually learning new ones, including <span>low-level programming</span> and systems fundamentals. I’m also continuing my education through <span>Georgia Tech’s OMSCS program</span> starting in Fall 2026, where I plan to dive deeper into operating systems and better understand how software behaves beneath the surface.</p>
                     </div>
 
                     <Link to="/about" className="arrow-link">More <span id="arrow">{`->`}</span></Link>
