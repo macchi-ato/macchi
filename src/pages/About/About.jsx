@@ -11,7 +11,7 @@ export default function About() {
             <main className="about-content">
                 <div className="about-header">
                     <h1>About Me</h1>
-                    <span>January 22, 2026</span>
+                    <span title="last updated">January 22, 2026</span>
                 </div>
 
                 <p>My name is Martin Vidal Garibay and I’m a recent Software Engineering graduate with a focus on full-stack development.</p>
