@@ -70,8 +70,8 @@ export default function ProjectDetail() {
 
                         <div className="project-summary">
                             {projectDescriptions[project.name] ? (
-                                projectDescriptions[project.name].map((description) => (
-                                    <p>{description}</p>
+                                projectDescriptions[project.name].map((description, index) => (
+                                    <p key={index}>{description}</p>
                             ))
                             ) : (
                                 <p>Project summary coming soon...</p>
