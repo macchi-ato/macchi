@@ -52,8 +52,13 @@
 
 .project-summary {
     text-align: left;
+    width: 100%;
 }
 
 .project-summary p {
+    word-spacing: -2px;
+    letter-spacing: -1px;
+    line-height: 1.4;
     margin: 0 0 var(--gap-size);
+    color: var(--color-text);
 }
