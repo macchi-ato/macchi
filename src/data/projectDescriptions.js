@@ -9,8 +9,8 @@
 
 const projectDescriptions = {
     "macchi" : [
-        "this is a test",
-        "helloge?"
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem aliquid totam facilis maiores quis laudantium voluptatum doloremque corporis asperiores optio hic quae excepturi quisquam aliquam et sed, officiis harum.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem aliquid totam facilis maiores quis laudantium voluptatum doloremque corporis asperiores optio hic quae excepturi quisquam aliquam et sed, officiis harum."
     ]
 }
 
