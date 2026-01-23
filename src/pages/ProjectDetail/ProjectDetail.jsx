@@ -2,6 +2,7 @@ import { useState,useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { fetchGitHubRepos } from "../../services/githubService"
 import { FiGithub } from "react-icons/fi"
+import projectDescriptions from "../../data/projectDescriptions"
 import "./ProjectDetail.css"
 
 //components
@@ -68,8 +69,13 @@ export default function ProjectDetail() {
                         </div>
 
                         <div className="project-summary">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium aliquid odit accusantium a quam doloremque animi iusto. Fuga maxime eligendi omnis architecto? Architecto vel accusamus dolorem laudantium cum deserunt.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium aliquid odit accusantium a quam doloremque animi iusto. Fuga maxime eligendi omnis architecto? Architecto vel accusamus dolorem laudantium cum deserunt.</p>
+                            {projectDescriptions[project.name] ? (
+                                projectDescriptions[project.name].map((description) => (
+                                    <p>{description}</p>
+                            ))
+                            ) : (
+                                <p>Project summary coming soon...</p>
+                            )}
                         </div>
                     </main>
                 </div>
