@@ -64,6 +64,7 @@ export default function Projects() {
                         title={repo.name}
                         description={repo.description}
                         language={repo.language}
+                        languages={repo.languages}
                     />
                 ))}
             </div>

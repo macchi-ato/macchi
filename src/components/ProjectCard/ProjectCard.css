@@ -92,6 +92,12 @@
     color: var(--color-highlight);
 }
 
+.languages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--gap-size) / 4);
+}
+
 #project-language {
     font-size: 0.8rem;
     font-weight: 600;

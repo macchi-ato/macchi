@@ -33,11 +33,28 @@ export async function fetchGitHubRepos() {
         
         const repos = await response.json()
         
+        // Fetch languages for each repository
+        const reposWithLanguages = await Promise.all(
+            repos.map(async (repo) => {
+                try {
+                    const langResponse = await fetch(repo.languages_url)
+                    if (langResponse.ok) {
+                        const languages = await langResponse.json()
+                        return { ...repo, languages: Object.keys(languages) }
+                    }
+                    return { ...repo, languages: [] }
+                } catch (error) {
+                    console.error(`Error fetching languages for ${repo.name}:`, error)
+                    return { ...repo, languages: [] }
+                }
+            })
+        )
+        
         // Cache the data with current timestamp
-        localStorage.setItem(CACHE_KEY, JSON.stringify(repos))
+        localStorage.setItem(CACHE_KEY, JSON.stringify(reposWithLanguages))
         localStorage.setItem(CACHE_TIMESTAMP_KEY, Date.now().toString())
         
-        return repos
+        return reposWithLanguages
     } catch (error) {
         console.error("Error fetching GitHub repos:", error)
     

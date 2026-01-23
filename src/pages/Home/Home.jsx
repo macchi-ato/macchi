@@ -72,6 +72,7 @@ export default function Home() {
                                 title={repo.name}
                                 description={repo.description}
                                 language={repo.language}
+                                languages={repo.languages}
                             />  
                         ))}
                         </div>
