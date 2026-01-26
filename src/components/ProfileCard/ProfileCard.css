@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: calc(var(--gap-size) / 2);
+    gap: var(--gap-size);
     box-sizing: border-box;
     min-height: 480px;
     padding: var(--gap-size);
@@ -22,18 +22,13 @@
 .profile-links {
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     width: 100%;
-    gap: calc(var(--gap-size) / 1);
+    gap: var(--gap-size);
 }
 
 .profile-link {
-    font-size: 0.8rem;
-    text-decoration: none;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 4px;
     color: var(--color-highlight);
     transition: color .3s ease;
 }
