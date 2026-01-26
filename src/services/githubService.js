@@ -31,7 +31,10 @@ export async function fetchGitHubRepos() {
             throw new Error(`GitHub API error: ${response.status} ${response.statusText}`)
         }
         
-        const repos = await response.json()
+        const data = await response.json()
+
+        // Remove GitHub intro banner
+        const repos = await data.filter(repo => repo.name !== GITHUB_USERNAME)
         
         // Fetch languages for each repository
         const reposWithLanguages = await Promise.all(
