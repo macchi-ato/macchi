@@ -1,8 +1,6 @@
 import "./ProfileCard.css"
 import profileImg from "../../assets/shanks.jpg"
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import { CiLinkedin, CiMail } from "react-icons/ci"
-import { FiGithub } from "react-icons/fi"
 import { VscGithubAlt } from "react-icons/vsc"
 
 export default function ProfileCard() {
