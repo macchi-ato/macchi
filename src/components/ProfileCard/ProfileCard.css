@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-size);
+    gap: calc(var(--gap-size) / 2);
     box-sizing: border-box;
     min-height: 480px;
     padding: var(--gap-size);
@@ -22,32 +22,22 @@
 .profile-links {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     width: 100%;
-    gap: calc(var(--gap-size) / 2);
-    box-sizing: border-box;
+    gap: calc(var(--gap-size) / 1);
 }
 
 .profile-link {
-    display: inline-flex;
-    align-items: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
     justify-content: center;
-    padding:  calc(var(--gap-size) / 2);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.profile-link:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
-}
-
-.profile-link svg {
+    align-items: end;
+    gap: 4px;
     color: var(--color-highlight);
     transition: color .3s ease;
 }
 
-.profile-link:hover svg {
+.profile-link:hover  {
     color: var(--color-primary);
 }

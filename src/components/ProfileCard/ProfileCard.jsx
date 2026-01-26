@@ -1,6 +1,9 @@
 import "./ProfileCard.css"
 import profileImg from "../../assets/shanks.jpg"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { CiLinkedin, CiMail } from "react-icons/ci"
+import { FiGithub } from "react-icons/fi"
+import { VscGithubAlt } from "react-icons/vsc"
 
 export default function ProfileCard() {
     return (
@@ -9,15 +12,17 @@ export default function ProfileCard() {
 
             <div className="profile-links">
                 <a className="profile-link" href="https://github.com/macchi-ato" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                    <FaGithub size={28} aria-hidden="true" />
+                    <VscGithubAlt size={24} aria-hidden="true" />
+                    Github
                 </a>
 
                 <a className="profile-link" href="https://www.linkedin.com/in/martin-vidal-garibay-2b912929a/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={28} aria-hidden="true" />
+                    <CiLinkedin size={28} aria-hidden="true" />
+                    LinkedIn
                 </a>
 
                 <a className="profile-link" href="mailto:vidalgmartin@hotmail.com" aria-label="Email">
-                    <FaEnvelope size={26} aria-hidden="true" />
+                    <CiMail size={28} aria-hidden="true" />
                 </a>
             </div>
         </aside>
