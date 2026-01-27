@@ -29,30 +29,23 @@
 .project-img {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     flex: 1;
     text-align: start;
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
+    border: 1px solid var(--color-border);
     border-radius: 4px;
-    color: var(--color-highlight);
-    background-color: var(--color-border);
     transition: transform .3s ease;
 }
 
-.project-card:hover .project-img {
-    transform: scale(1.01);
-}
-
-.project-card.no-hover:hover .project-img {
-    transform: none;
-}
-
 #project-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: var(--gap-size);
+    color: var(--color-highlight);
     border-bottom: 1px dashed transparent;
     transition: border-bottom .3s ease;
 }
@@ -66,8 +59,8 @@
 }
 
 #project-about {
-    font-size: 0.8rem;
     margin: 0;
+    color: var(--color-text);
 }
 
 .language-container {
