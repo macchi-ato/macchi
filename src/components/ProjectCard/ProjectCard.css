@@ -5,7 +5,7 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     gap: var(--gap-size);
     min-height: 400px;
@@ -19,7 +19,6 @@
 
 .project-card:hover {
     border: 1px solid var(--color-primary);
-    /* box-shadow: 0 4px 16px rgba(206, 66, 87, 0.4); */
 }
 
 .project-card.no-hover:hover {
@@ -27,39 +26,35 @@
     cursor: default;
 }
 
-#project-img {
+.project-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 1;
+    text-align: start;
     width: 100%;
-    max-height: 280px;
-    object-fit: cover;
+    box-sizing: border-box;
+    padding: var(--gap-size);
     border-radius: 4px;
+    color: var(--color-highlight);
+    background-color: var(--color-border);
     transition: transform .3s ease;
 }
 
-.project-card:hover #project-img {
-    transform: scale(1.02);
+.project-card:hover .project-img {
+    transform: scale(1.01);
 }
 
-.project-card.no-hover:hover #project-img {
+.project-card.no-hover:hover .project-img {
     transform: none;
 }
 
-.project-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    flex: 1;
-}
-
 #project-title {
-    margin: 0;
-    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: var(--gap-size);
     border-bottom: 1px dashed transparent;
     transition: border-bottom .3s ease;
-}
-
-.project-description {
-    text-align: start;
 }
 
 .project-card.no-hover:hover #project-title {
@@ -67,21 +62,12 @@
 }
 
 .project-card:hover #project-title {
-    border-bottom: 1px dashed var(--color-primary);
+    border-bottom: 1px dashed var(--color-highlight);
 }
 
 #project-about {
     font-size: 0.8rem;
-    margin-bottom: calc(var(--gap-size) / 2);
-    color: var(--color-text);
-}
-
-.project-card.no-hover:hover #project-about {
-    color: var(--color-text);
-}
-
-.project-card:hover #project-about {
-    color: var(--color-highlight);
+    margin: 0;
 }
 
 .language-container {
