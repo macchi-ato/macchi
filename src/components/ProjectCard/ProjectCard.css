@@ -32,6 +32,8 @@
     justify-content: space-between;
     align-items: start;
     flex: 1;
+    padding: var(--gap-size);
+    border-radius: 4px;
 }
 
 .project-header {
@@ -50,7 +52,10 @@
 }
 
 #project-about {
+    font-size: 0.9rem;
     text-align: start;
+    word-spacing: -4px;
+    line-height: 1.2;
     margin: 0;
     color: var(--color-text);
 }
