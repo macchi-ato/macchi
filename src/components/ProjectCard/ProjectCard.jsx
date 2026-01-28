@@ -12,7 +12,7 @@ export default function Project({ title, description, language, languages, disab
             <div className={`project-card ${disableHover ? 'no-hover' : ''}`}>
                 <div className="project-details">
                     <div className="project-header">
-                        <GoRepo size={40} aria-hidden="true" />
+                        <GoRepo size={36} aria-hidden="true" />
                         <h2>{title}</h2>
                     </div>
 

@@ -32,7 +32,6 @@
     justify-content: space-between;
     align-items: start;
     flex: 1;
-    width: 100%;
 }
 
 .project-header {
@@ -41,13 +40,11 @@
     align-items: center;
     gap: calc(var(--gap-size) / 4);
     line-height: 1.2;
-    width: 100%;
     color: var(--color-primary);
 }
 
 .project-header h2 {
     text-align: start;
-    width: 100%;
     margin: 0;
     border-bottom: 2px solid var(--color-primary);
 }
