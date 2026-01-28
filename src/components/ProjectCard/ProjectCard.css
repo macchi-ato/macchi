@@ -32,8 +32,7 @@
     justify-content: space-between;
     align-items: start;
     flex: 1;
-    padding: var(--gap-size);
-    border-radius: 4px;
+    width: 100%;
 }
 
 .project-header {
@@ -41,12 +40,14 @@
     justify-content: start;
     align-items: center;
     gap: calc(var(--gap-size) / 4);
-    line-height: 1;
+    line-height: 1.2;
     width: 100%;
     color: var(--color-primary);
 }
 
 .project-header h2 {
+    text-align: start;
+    width: 100%;
     margin: 0;
     border-bottom: 2px solid var(--color-primary);
 }
@@ -56,7 +57,7 @@
     text-align: start;
     word-spacing: -4px;
     line-height: 1.2;
-    margin: 0;
+    margin: 0 var(--gap-size);
     color: var(--color-text);
 }
 
