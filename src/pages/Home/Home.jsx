@@ -80,12 +80,30 @@ export default function Home() {
                 </section>
 
                 <section className="home-extra">
-                    <span>Coming Soon</span>
-                    <span>Coming Soon</span>
-                    <span>Coming Soon</span>
-                    <span>Coming Soon</span>
-                    <span>Coming Soon</span>
-                    <span>Coming Soon</span>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div className="wip-card">
+                        <div className="wip-indicator"></div>
+                        <span>Coming Soon</span>
+                    </div>
                 </section>
             </main>
         </div>
