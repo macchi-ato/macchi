@@ -37,7 +37,7 @@
     justify-content: start;
     align-items: start;
     flex: 1;
-    gap: var(--gap-size);
+    gap: calc(var(--gap-size) * 2);
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
@@ -47,16 +47,18 @@
 
 .project-header {
     display: flex;
-    justify-content: start;
-    align-items: end;
-    gap: calc(var(--gap-size) / 4);
-    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     color: var(--color-primary);
 }
 
 .project-header h2 {
     text-align: start;
     margin: 0;
+    line-height: 1;
+    width: 100%;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 #project-about {
