@@ -5,19 +5,20 @@
     align-items: center;
     gap: var(--gap-size);
     box-sizing: border-box;
-    min-height: 480px;
+    min-height: 440px;
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
     border-radius: 4px;
     box-shadow: var(--shadow);
-} 
+}
 
 .profile-image {
-    flex: auto; /* grow to fill remaining vertical space */
+    flex: 1;
     width: 100%;
-    object-fit: cover;
     border-radius: 4px;
-} 
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+}
 
 .profile-links {
     display: flex;
