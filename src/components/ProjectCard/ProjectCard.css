@@ -13,15 +13,17 @@
     border-radius: 4px;
     box-shadow: var(--shadow);
     cursor: pointer;
-    transition: border .3s ease;
     background: linear-gradient(135deg, 
-        rgba(206, 66, 87, 1.0) 0%, 
+        rgb(206, 66, 87, 1.0) 50%, 
         rgba(255, 127, 81, 1.0) 50%,
-        rgb(255, 248, 201) 100%);
+        rgb(255, 249, 213, 1.0) 100%);
+    background-size: 200% 200%;
+    background-position: 100% 50%;
+    transition: background-position 0.5s ease;
 }
 
 .project-card:hover {
-    
+    background-position: 0% 50%;
 }
 
 .project-card.no-hover:hover {
