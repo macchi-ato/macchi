@@ -21,7 +21,7 @@
     gap: calc(var(--gap-size) / 2);
     line-height: 1;
     padding-bottom: calc(var(--gap-size) / 2);
-    color: var(--color-primary);
+    color: var(--color-highlight);
 }
 
 .projects-header h1 {
