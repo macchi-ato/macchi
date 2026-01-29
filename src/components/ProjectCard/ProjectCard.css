@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: calc(var(--gap-size) * 2);
+    gap: var(--gap-size);
     min-height: 320px;
     padding: var(--gap-size);
     border: 1px solid var(--color-border);
@@ -32,6 +32,11 @@
     justify-content: space-between;
     align-items: start;
     flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--gap-size);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
 }
 
 .project-header {
@@ -54,7 +59,7 @@
     text-align: start;
     word-spacing: -4px;
     line-height: 1.2;
-    margin: 0 var(--gap-size);
+    margin: 0;
     color: var(--color-text);
 }
 
