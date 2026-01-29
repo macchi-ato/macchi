@@ -27,6 +27,7 @@
 }
 
 .project-card.no-hover:hover {
+    background-position: 100% 50%;
     cursor: default;
 }
 
