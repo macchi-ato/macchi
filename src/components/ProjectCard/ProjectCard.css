@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: start;
     gap: var(--gap-size);
-    min-height: 320px;
+    min-height: 280px;
     padding: var(--gap-size);
     border-radius: 4px;
     box-shadow: var(--shadow);
@@ -47,16 +47,15 @@
 .project-header {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     gap: calc(var(--gap-size) / 4);
-    line-height: 1.2;
+    line-height: 1;
     color: var(--color-primary);
 }
 
 .project-header h2 {
     text-align: start;
     margin: 0;
-    border-bottom: 2px solid var(--color-primary);
 }
 
 #project-about {
