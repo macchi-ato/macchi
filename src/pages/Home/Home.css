@@ -40,7 +40,7 @@
     line-height: 1;
     word-spacing: -4px;
     letter-spacing: -2px;
-    margin-bottom: calc(var(--gap-size) / 2);
+    margin-bottom: calc(var(--gap-size) / 4);
     color: var(--color-highlight);
 }
 
