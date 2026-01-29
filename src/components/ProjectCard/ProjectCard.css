@@ -13,10 +13,10 @@
     border-radius: 4px;
     box-shadow: var(--shadow);
     cursor: pointer;
-    background: linear-gradient(135deg, 
-        rgb(206, 66, 87, 1.0) 50%, 
-        rgba(255, 127, 81, 1.0) 50%,
-        rgb(255, 249, 213, 1.0) 100%);
+    background: linear-gradient(135deg,
+        var(--color-primary) 50%, 
+        var(--color-secondary) 50%,
+        var(--color-text) 100%);
     background-size: 200% 200%;
     background-position: 100% 50%;
     transition: background-position 0.5s ease;
