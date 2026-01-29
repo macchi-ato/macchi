@@ -1,12 +1,10 @@
 import "./ProfileCard.css"
-import profileImg from "../../assets/shanks.jpg"
 import { CiLinkedin, CiMail } from "react-icons/ci"
 import { VscGithubAlt } from "react-icons/vsc"
 
 export default function ProfileCard() {
     return (
         <aside className="profile-card">
-            
             <div className="profile-image"></div>
 
             <div className="profile-links">
