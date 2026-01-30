@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { fetchGitHubRepos } from "../../services/githubService"
+import { FiMapPin } from "react-icons/fi"
 import "./Home.css"
 
 //components
@@ -80,26 +81,33 @@ export default function Home() {
                 </section>
 
                 <section className="home-extra">
+                    <div className="info-card">
+                        <div className="wip-indicator"></div>
+                        <FiMapPin size={32} aria-hidden="true" className="info-icon" />
+                        <span className="info-label">Location</span>
+                        <span className="info-value">Seattle, WA</span>
+                    </div>
+
                     <div className="wip-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
+
                     <div className="wip-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
+
                     <div className="wip-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
+
                     <div className="wip-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
-                    <div className="wip-card">
-                        <div className="wip-indicator"></div>
-                        <span>Coming Soon</span>
-                    </div>
+                    
                     <div className="wip-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
