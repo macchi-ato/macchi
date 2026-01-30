@@ -111,12 +111,8 @@ export default function Home() {
 
                     <div className="info-card">
                         <div className="wip-indicator"></div>
-                        <span>Coming Soon</span>
-                    </div>
-                    
-                    <div className="info-card">
-                        <div className="wip-indicator"></div>
-                        <span>Coming Soon</span>
+                        <span className="info-label">Theme Selector</span>
+                        <span className="info-title">Coming Soon</span>
                     </div>
                 </section>
             </main>
