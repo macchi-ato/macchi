@@ -24,6 +24,10 @@
     color: var(--color-highlight);
 }
 
+.projects-header svg {
+    color: var(--color-primary);
+}
+
 .projects-header h1 {
     margin: 0;
 }
