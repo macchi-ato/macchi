@@ -88,27 +88,27 @@ export default function Home() {
                         <span className="info-value">Seattle, WA</span>
                     </div>
 
-                    <div className="wip-card">
+                    <div className="info-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
 
-                    <div className="wip-card">
+                    <div className="info-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
 
-                    <div className="wip-card">
+                    <div className="info-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
 
-                    <div className="wip-card">
+                    <div className="info-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
                     
-                    <div className="wip-card">
+                    <div className="info-card">
                         <div className="wip-indicator"></div>
                         <span>Coming Soon</span>
                     </div>
