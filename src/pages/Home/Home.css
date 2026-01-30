@@ -167,6 +167,11 @@
     animation: shimmer 2s infinite;
 }
 
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
 .info-icon {
     color: var(--color-highlight);
     transition: color .3s ease;
@@ -190,11 +195,6 @@
     letter-spacing: -1px;
     word-spacing: -4px;
     color: var(--color-highlight);
-}
-
-@keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
 }
 
 @media (max-width: 1200px) {
