@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { fetchGitHubRepos } from "../../services/githubService"
-import { FiMapPin, FiSunrise, FiClock } from "react-icons/fi"
+import { FiMapPin, FiSunrise, FiClock, FiHeart } from "react-icons/fi"
 import "./Home.css"
 
 //components
@@ -104,7 +104,9 @@ export default function Home() {
 
                     <div className="info-card">
                         <div className="wip-indicator"></div>
-                        <span>Coming Soon</span>
+                        <FiHeart size={32} aria-hidden="true" className="info-icon" />
+                        <span className="info-label">Created with</span>
+                        <span className="info-title">React and ❤️</span>
                     </div>
 
                     <div className="info-card">
