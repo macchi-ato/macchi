@@ -52,7 +52,7 @@
     font-size: 1.2rem;
     word-spacing: -4px;
     letter-spacing: -1px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: var(--color-text);
 }
 
@@ -61,7 +61,6 @@
     text-decoration: none;
     opacity: 0.8;
     color: var(--color-primary);
-    border-bottom: 2px dashed var(--color-primary);
     transition: opacity 0.3s ease;
 }
 
