@@ -85,7 +85,7 @@ export default function Home() {
                         <div className="wip-indicator"></div>
                         <FiMapPin size={32} aria-hidden="true" className="info-icon" />
                         <span className="info-label">Location</span>
-                        <span className="info-title">Seattle, WA</span>
+                        <span className="info-title">United States</span>
                     </div>
 
                     <div className="info-card">
