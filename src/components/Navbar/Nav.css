@@ -27,13 +27,13 @@
     justify-content: center;
     align-items: center;
     gap: calc(var(--gap-size) / 4);
-    letter-spacing: 2px;
     text-decoration: none;
     color: var(--color-highlight);
 }
 
 #prompt-time {
     font-weight: 600;
+    letter-spacing: 2px;
     color: var(--color-primary);
 }
 
