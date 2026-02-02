@@ -31,7 +31,7 @@
     color: var(--color-highlight);
 }
 
-#prompt-time {
+#prompt-name {
     font-weight: 600;
     letter-spacing: 2px;
     color: var(--color-primary);
