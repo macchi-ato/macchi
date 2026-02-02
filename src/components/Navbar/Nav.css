@@ -59,6 +59,7 @@
 }
 
 .menu-items a { 
+    font-weight: 600;
     margin-left: var(--gap-size);
     color: var(--color-highlight);
     text-decoration: none;
