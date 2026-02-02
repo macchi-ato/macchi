@@ -11,6 +11,11 @@ const projectDescriptions = {
     "macchi" : [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem aliquid totam facilis maiores quis laudantium voluptatum doloremque corporis asperiores optio hic quae excepturi quisquam aliquam et sed, officiis harum.",
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem aliquid totam facilis maiores quis laudantium voluptatum doloremque corporis asperiores optio hic quae excepturi quisquam aliquam et sed, officiis harum."
+    ],
+    "dotfiles" : [
+        "I use arch btw!",
+        "These dotfiles are heavily based on someone else's configuration as I pointed out on github. However, I have made enough changes that I finally feel comfortable calling it my own.",
+        "There is nothing impressive here or much to say about it, I even considered omitting this repo, but to this day, tweaking my system is still something I very much enjoy, so I'm happy to include it as one of my projects."
     ]
 }
 
