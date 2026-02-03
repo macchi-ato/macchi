@@ -42,7 +42,7 @@ export default function Home() {
                 <section className="home-intro">
                     <div className="intro-container">
                         <h1>Hello! I'm <span id="intro-name">Martin</span></h1>
-                        <p>I’m a recent <span>Software Engineering Graduate</span> focused on <span>Full-Stack Development</span>. Right now, I’m improving my existing skills while gradually learning new ones, including low-level programming and systems fundamentals. I’m also continuing my education through <a href="https://omscs.gatech.edu/" target="_blank">Georgia Tech’s OMSCS program</a> starting in Fall 2026, where I plan to dive deeper into computing systems while keeping my focus on full-time industry work.</p>
+                        <p>I’m a recent <span>Software Engineering Graduate</span> focused on <span>Full-Stack Development</span>. Right now, I’m improving my existing skills while gradually learning new ones, including low-level programming and systems fundamentals. I’m also continuing my education through <a href="https://omscs.gatech.edu/" target="_blank">Georgia Tech’s OMSCS program</a> starting in Fall 2026, where I plan to specialize in computing systems while keeping my focus on full-time industry work.</p>
                     </div>
 
                     <Link to="/about" className="arrow-link about-arrow">More <span id="arrow">{`->`}</span></Link>
