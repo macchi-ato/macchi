@@ -56,16 +56,11 @@
     color: var(--color-text);
 }
 
-.intro-container p > * {
+.intro-container p span {
     font-weight: 600;
     text-decoration: none;
     opacity: 0.8;
     color: var(--color-primary);
-    transition: opacity 0.3s ease;
-}
-
-.intro-container p a:hover {
-    opacity: 1.0;
 }
 
 .arrow-link {
