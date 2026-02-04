@@ -34,19 +34,19 @@ export default function Nav() {
                         <span></span>
                     </span>
                 </button>
+            </div>
 
-                <div className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
-                    <Link to="/about" onClick={toggleMenu}>About</Link>
-                    <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-                    <a 
-                        href="/vidalgmartin_resume.pdf" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={toggleMenu}
-                        >
-                        Resume
-                    </a>
-                </div>
+            <div className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
+                <Link to="/about" onClick={toggleMenu}>About</Link>
+                <Link to="/projects" onClick={toggleMenu}>Projects</Link>
+                <a 
+                    href="/vidalgmartin_resume.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={toggleMenu}
+                    >
+                    Resume
+                </a>
             </div>
         </nav> 
     )
