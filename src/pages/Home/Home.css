@@ -220,12 +220,12 @@
         grid-template-columns: 1fr;
     }
     .intro-container h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .intro-container p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     #projects-header {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
