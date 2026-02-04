@@ -1,12 +1,18 @@
 import { Link, useLocation } from "react-router-dom"
+import { useState } from "react"
 import "./Nav.css"
 
 export default function Nav() {
     const location = useLocation()
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
     
     const getCurrentPath = () => {
         const path = location.pathname === "/" ? "" : location.pathname.slice(1)
         return path
+    }
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
     }
     
     return (
@@ -18,13 +24,25 @@ export default function Nav() {
                     <span id="prompt-cursor"></span>
                 </Link>
 
-                <div className="menu-items">
-                    <Link to="/about">About</Link>
-                    <Link to="/projects">Projects</Link>
+                <button 
+                    className="menu-icon" 
+                    onClick={toggleMenu}
+                >
+                    <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
+                    <Link to="/about" onClick={toggleMenu}>About</Link>
+                    <Link to="/projects" onClick={toggleMenu}>Projects</Link>
                     <a 
                         href="/vidalgmartin_resume.pdf" 
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={toggleMenu}
                         >
                         Resume
                     </a>
