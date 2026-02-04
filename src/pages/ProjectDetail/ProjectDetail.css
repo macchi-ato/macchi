@@ -62,3 +62,9 @@
     margin: 0 0 var(--gap-size);
     color: var(--color-text);
 }
+
+@media (max-width: 600px) {
+    .project-detail-header h1 {
+        font-size: 1.6rem;
+    }
+}
