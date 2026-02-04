@@ -19,6 +19,13 @@ const projectDescriptions = {
         "As a developer, having some sort of portfolio was long overdue. This isn't my first attempt, but it's the first time I've been satisfied with the result to host and share it.",
         "The biggest challenge was using GitHub's API to dynamically render my projects because I knew that I didn't want to manually have to update my projects, although now I feel like I've just created a second GitHub profile, but with my own style.",
         "Regardless, I am happy with the result but it's far from being done. I plan on continuing to update it until I run out of ideas or I come up with a new design for its second iteration."
+    ],
+    "doughnut" : [
+        "My undergrad capstone project.",
+        "The idea was to create a place where artists could upload, save and view other assets directly in the browser. I wanted the platform to be something like Art Station, but specifically for 3D artists.",
+        "I built the frontend with React and the backend with ASP.NET Core, handling everything from authentication and asset metadata to file storage and API design. The biggest challenges was reliably handling large files, because handling blob data was a first for me.",
+        "Like most things I build, I see plenty of areas I’d approach differently today, but I'm still very proud of this project because it represents a turning point where I became comfortable thinking like a full-stack developer instead of just someone writing code.",
+        "The platform is functional and complete but not currently hosted. You can find out how to run it locally on GitHub."
     ]
 }
 
