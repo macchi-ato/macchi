@@ -122,7 +122,7 @@
 
 .menu-items a { 
     font-weight: 600;
-    font-size: 0.9rem;
+    
     color: var(--color-highlight);
     text-decoration: none;
     cursor: pointer;
