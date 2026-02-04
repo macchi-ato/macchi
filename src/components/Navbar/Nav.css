@@ -122,7 +122,6 @@
 
 .menu-items a { 
     font-weight: 600;
-    
     color: var(--color-highlight);
     text-decoration: none;
     cursor: pointer;
