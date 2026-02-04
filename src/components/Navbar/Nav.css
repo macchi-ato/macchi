@@ -101,6 +101,7 @@
     right: 0;
     display: flex;
     flex-direction: column;
+    align-items: end;
     gap: calc(var(--gap-size) / 2);
     padding: var(--gap-size);
     border-radius: 4px;
