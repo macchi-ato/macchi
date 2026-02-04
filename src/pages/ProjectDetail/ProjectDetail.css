@@ -31,16 +31,6 @@
     border-bottom: 1px dashed var(--color-border);
 }
 
-.project-detail-header h1 {
-    margin: 0;
-    color: var(--color-primary);
-}
-
-.project-detail-header span {
-    font-size: 0.8rem;
-    opacity: 0.6;
-}
-
 .project-detail-header a {
     color: var(--color-primary);
     transition: scale .2s ease;
@@ -48,6 +38,11 @@
 
 .project-detail-header a:hover {
     scale: 1.2
+}
+
+.project-detail-header span {
+    font-size: 0.8rem;
+    opacity: 0.6;
 }
 
 .project-summary {
@@ -61,10 +56,4 @@
     line-height: 1.4;
     margin: 0 0 var(--gap-size);
     color: var(--color-text);
-}
-
-@media (max-width: 600px) {
-    .project-detail-header h1 {
-        font-size: 1.8rem;
-    }
 }

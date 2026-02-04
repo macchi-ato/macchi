@@ -1,7 +1,8 @@
 import { useState,useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { fetchGitHubRepos } from "../../services/githubService"
 import { FiGithub } from "react-icons/fi"
+import { RiArrowGoBackFill } from "react-icons/ri"
 import projectDescriptions from "../../data/projectDescriptions"
 import "./ProjectDetail.css"
 
@@ -69,7 +70,7 @@ export default function ProjectDetail() {
 
                     <main className="project-detail-content">
                         <div className="project-detail-header">
-                            <h1>{project.name}</h1>
+                            <Link to="/projects"><RiArrowGoBackFill size={24} aria-hidden="true" /></Link>
                             <span>{formatDate(project.created_at)}</span>
                             <a href={project.html_url} target="_blank"><FiGithub size={24} aria-hidden="true" /></a>
                         </div>
