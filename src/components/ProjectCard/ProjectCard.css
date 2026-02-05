@@ -40,16 +40,24 @@
     justify-content: start;
     align-items: start;
     flex: 1;
-    gap: calc(var(--gap-size) * 2);
+    gap: calc(var(--gap-size) * 1);
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
+    background: rgb(0, 140, 140);
+    border-radius: 4px;
+    transition: scale 0.3s ease;
+}
+
+.project-card:hover .project-details {
+    scale: 1.02;
 }
 
 .project-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: calc(var(--gap-size) / 2);
     width: 100%;
     color: var(--color-primary);
 }
@@ -59,16 +67,21 @@
     margin: 0;
     line-height: 1;
     width: 100%;
-    border-bottom: 2px solid var(--color-primary);
 }
 
 #project-about {
     font-size: 0.9rem;
     text-align: start;
-    word-spacing: -4px;
-    line-height: 1.2;
+    word-spacing: -2px;
+    line-height: 1.4;
     margin: 0;
+    margin-left: calc(var(--gap-size) * 2);
     color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+.project-card:hover #project-about {
+    color: var(--color-highlight);
 }
 
 .language-container {
@@ -76,7 +89,7 @@
     justify-content: start;
     align-items: center;
     gap: calc(var(--gap-size) / 4);
-    color: var(--color-secondary);
+    color: var(--color-highlight);
     transition: color 0.3s ease;
 }
 
