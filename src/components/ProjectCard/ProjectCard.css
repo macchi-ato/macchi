@@ -14,22 +14,14 @@
     box-shadow: var(--shadow);
     cursor: pointer;
     border: 1px solid var(--color-border);
-    /* background: linear-gradient(135deg,
-        var(--color-primary) 50%, 
-        var(--color-secondary) 50%,
-        var(--color-text) 100%);
-    background-size: 200% 200%;
-    background-position: 100% 50%; */
     transition: background-position 0.5s ease, border 0.3s ease;
 }
 
 .project-card:hover {
-    /* background-position: 0% 50%; */
     border: 1px solid var(--color-primary);
 }
 
 .project-card.no-hover:hover {
-    /* background-position: 100% 50%; */
     border: 1px solid var(--color-border);
     cursor: default;
 }
@@ -44,13 +36,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
-    /* background: linear-gradient(135deg, var(--color-highlight), var(--color-secondary), var(--color-primary)); */
-    border-radius: 4px;
-    transition: scale 0.3s ease;
-}
-
-.project-card:hover .project-details {
-    /* scale: 1.02; */
 }
 
 .project-header {
