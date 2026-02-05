@@ -5,7 +5,9 @@ import { VscGithubAlt } from "react-icons/vsc"
 export default function ProfileCard() {
     return (
         <aside className="profile-card">
-            <div className="profile-image"></div>
+            <div className="profile-image">
+                <img src="/youngJiku.jpeg" alt="Profile" />
+            </div>
 
             <div className="profile-links">
                 <a className="profile-link" href="https://github.com/macchi-ato" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
