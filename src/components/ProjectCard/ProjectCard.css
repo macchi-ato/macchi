@@ -69,6 +69,10 @@
     color: var(--color-highlight);
 }
 
+.project-card.no-hover:hover #project-about {
+    color: var(--color-text);
+}
+
 .language-container {
     display: flex;
     justify-content: start;
@@ -83,7 +87,7 @@
 }
 
 .project-card.no-hover:hover .language-container {
-    color: var(--color-secondary);
+    color: var(--color-highlight);
 }
 
 .languages-list {
