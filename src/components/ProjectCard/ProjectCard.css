@@ -44,13 +44,13 @@
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
-    background: linear-gradient(135deg, rgb(0, 170, 170), var(--color-secondary));
+    /* background: linear-gradient(135deg, var(--color-highlight), var(--color-secondary), var(--color-primary)); */
     border-radius: 4px;
     transition: scale 0.3s ease;
 }
 
 .project-card:hover .project-details {
-    scale: 1.02;
+    /* scale: 1.02; */
 }
 
 .project-header {
