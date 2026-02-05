@@ -44,7 +44,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: var(--gap-size);
-    background: rgb(0, 140, 140);
+    background: linear-gradient(135deg, rgb(0, 170, 170), var(--color-secondary));
     border-radius: 4px;
     transition: scale 0.3s ease;
 }
