@@ -10,6 +10,8 @@ export default function Project({ title, description, language, languages, disab
     return (
         <Link to={`/projects/${title}`} id="link-to-project">
             <div className={`project-card ${disableHover ? 'no-hover' : ''}`}>
+                <div className="card-gradient"></div>
+
                 <div className="project-details">
                     <div className="project-header">
                         <GoRepo size={32} aria-hidden="true" />
