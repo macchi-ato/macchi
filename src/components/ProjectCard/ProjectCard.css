@@ -14,7 +14,7 @@
     box-shadow: var(--shadow);
     cursor: pointer;
     border: 1px solid var(--color-border);
-    transition: background-position 0.5s ease, border 0.3s ease;
+    transition: border 0.3s ease;
 }
 
 .project-card:hover {
@@ -30,7 +30,7 @@
     width: 100%;
     min-height: 60px;
     border-radius: 4px;
-    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-secondary) 50%, var(--color-primary) 100%);
+    background: linear-gradient(135deg, var(--color-text), var(--color-secondary), var(--color-primary));
 }
 
 .project-details {
