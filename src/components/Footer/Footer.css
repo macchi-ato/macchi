@@ -10,7 +10,6 @@ footer {
     border-radius: 4px;
     color: var(--color-highlight);
     background: rgb(18, 18, 18);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -33,11 +32,7 @@ footer::before {
     gap: calc(var(--gap-size) / 2);
     color: var(--color-highlight);
     text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.footer-link svg {
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .footer-link p {
@@ -47,8 +42,4 @@ footer::before {
 
 .footer-link:hover {
     color: var(--color-primary);
-}
-
-.footer-link:hover svg {
-    transform: scale(1.2);
 }
