@@ -40,7 +40,7 @@
     gap: calc(var(--gap-size) * 2);
     min-height: 440px;
     box-sizing: border-box;
-    padding: var(--gap-size);
+    padding: calc(var(--gap-size) * 2);
     transition: transform 0.3s ease;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .about-arrow {
-    margin-right: calc(var(--gap-size) * 4);
+    margin-right: calc(var(--gap-size) * 2);
 }
 
 .home-projects {
