@@ -19,8 +19,40 @@
   color-scheme: light dark;
   color: var(--color-text);
   background-color: var(--color-bg);
+  
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(18, 18, 18, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 6px;
+  border: 2px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
 }
