@@ -6,6 +6,18 @@
     min-height: calc(60px + var(--gap-size)); /* nav height + gap size */
     margin-bottom: 160px;
     background-color: transparent;
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .navbar {
@@ -111,7 +123,7 @@
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .menu-items.open {
@@ -125,11 +137,11 @@
     color: var(--color-highlight);
     text-decoration: none;
     cursor: pointer;
-    border-bottom: 1px dashed transparent;
-    transition: color .3s ease, border-bottom .3s ease;
+    margin-bottom: calc(var(--gap-size) / 4);
+    transition: all 0.3s ease;
 }
 
 .menu-items a:hover {
     color: var(--color-primary);
-    border-bottom: 1px dashed var(--color-primary);
+    transform: translateX(-4px);
 }
