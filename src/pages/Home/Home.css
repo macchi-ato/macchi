@@ -4,6 +4,18 @@
     gap: var(--gap-size);
     align-items: start;
     margin-top: 0;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 } 
 
 .home-profile {
@@ -29,6 +41,7 @@
     min-height: 440px;
     box-sizing: border-box;
     padding: var(--gap-size);
+    transition: transform 0.3s ease;
 }
 
 .intro-container > * {
@@ -42,18 +55,51 @@
     letter-spacing: -2px;
     margin-bottom: calc(var(--gap-size) / 4);
     color: var(--color-highlight);
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #intro-name {
     color: var(--color-primary);
+    position: relative;
+    display: inline-block;
+}
+
+#intro-name::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.intro-container h1:hover #intro-name::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .intro-container p {
     font-size: 1.2rem;
     word-spacing: -4px;
     letter-spacing: -1px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: var(--color-text);
+    animation: slideInLeft 0.8s ease-out 0.4s both;
 }
 
 .intro-container p span {
@@ -61,18 +107,27 @@
     text-decoration: none;
     opacity: 0.8;
     color: var(--color-primary);
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+    cursor: default;
+}
+
+.intro-container p span:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(206, 66, 87, 0.4);
 }
 
 .arrow-link {
     font-size: 0.8rem;
+    font-weight: 600;
     text-decoration: none;
     color: var(--color-primary);
     cursor: pointer;
+    animation: slideInLeft 0.8s ease-out 0.6s both;
 }
 
 .arrow-link #arrow {
     display: inline-block;
-    transition: transform .15s ease;
+    transition: transform 0.3s ease;
 }
 
 .arrow-link:hover #arrow {
@@ -88,6 +143,18 @@
     flex-direction: column;
     gap: var(--gap-size);
     width: 100%;
+    animation: slideInUp 0.8s ease-out 0.3s both;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header-container {
@@ -112,7 +179,16 @@
 
 #projects-header span {
     letter-spacing: 2px;
-    color: var(--color-primary);    
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+#projects-header:hover span:first-child {
+    transform: translateX(-3px);
+}
+
+#projects-header:hover span:last-child {
+    transform: translateX(3px);
 }
 
 .projects {
@@ -139,6 +215,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-size);
     width: 100%;
+    animation: slideInUp 0.8s ease-out 0.5s both;
 }
 
 .info-card {
@@ -148,8 +225,7 @@
     align-items: center;
     justify-content: center;
     gap: calc(var(--gap-size) / 2);
-    min-height: 240px;
-    padding: var(--gap-size);
+    min-height: 280px;
     color: var(--color-highlight);
     border: 1px solid var(--color-border);
     border-radius: 4px;
@@ -174,15 +250,26 @@
 
 .info-icon {
     color: var(--color-primary);
+    transition: all 0.5s ease;
+}
+
+.info-card:hover .info-icon {
+    transform: scale(1.1) rotateY(360deg);
 }
 
 .info-label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     word-spacing: -4px;
     color: var(--color-text);
     opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.info-card:hover .info-label {
+    opacity: 0.8;
 }
 
 .info-title {
@@ -190,11 +277,12 @@
     font-weight: 600;
     letter-spacing: -1px;
     word-spacing: -4px;
-    transition: color .3s ease;
+    transition: all 0.3s ease;
 }
 
 .info-card:hover .info-title {
     color: var(--color-primary);
+    transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {
