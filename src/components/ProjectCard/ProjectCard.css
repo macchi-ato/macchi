@@ -93,16 +93,7 @@
     align-items: center;
     gap: calc(var(--gap-size) / 2);
     width: 100%;
-    color: var(--color-secondary);
-    transition: color 0.4s ease;
-}
-
-.project-card:hover .project-header {
     color: var(--color-primary);
-}
-
-.project-card.no-hover:hover .project-header {
-    color: var(--color-secondary);
 }
 
 .project-header h2 {
@@ -127,16 +118,8 @@
     justify-content: start;
     align-items: center;
     gap: calc(var(--gap-size) / 4);
-    color: var(--color-secondary);
-    transition: 0.4s ease;
-}
-
-.project-card:hover .language-container {
     color: var(--color-primary);
-}
-
-.project-card.no-hover:hover .language-container{
-    color: var(--color-secondary);
+    transition: 0.4s ease;
 }
 
 .languages-list {
