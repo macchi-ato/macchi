@@ -43,6 +43,10 @@
     transform: scale(1.05);
 }
 
+.profile-image.no-hover:hover img {
+    transform: scale(1.0);
+}
+
 .profile-links {
     display: flex;
     justify-content: center;

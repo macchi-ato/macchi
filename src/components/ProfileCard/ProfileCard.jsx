@@ -2,10 +2,10 @@ import "./ProfileCard.css"
 import { CiLinkedin, CiMail } from "react-icons/ci"
 import { VscGithubAlt } from "react-icons/vsc"
 
-export default function ProfileCard() {
+export default function ProfileCard({ disableHover }) {
     return (
         <aside className="profile-card">
-            <div className="profile-image">
+            <div className={`profile-image ${disableHover ? 'no-hover' : ''}`}>
                 <img src="/youngJiku.jpeg" alt="Profile" />
             </div>
 

@@ -5,7 +5,9 @@ export default function About() {
     return (
         <div className="about-container">
             <aside className="about-profile">
-                <ProfileCard />
+                <ProfileCard 
+                    disableHover={true}
+                />
             </aside>
 
             <main className="about-content">
