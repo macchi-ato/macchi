@@ -26,6 +26,15 @@ export default function ProjectDetail() {
         })
     }
 
+    if (!project) {
+        return (
+            <div className="project-detail-container">
+                <span>Project does not exist</span>
+                <Link to="/projects">Back to Projects</Link>
+            </div>
+        )
+    }
+
     return (
         <>
             {error ? (
