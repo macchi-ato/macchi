@@ -1,24 +1,30 @@
 import { useState,useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
-import { fetchGitHubRepos } from "../../services/githubService"
 import { FiGithub } from "react-icons/fi"
 import { RiArrowGoBackFill } from "react-icons/ri"
+import { useGitHub } from "../../context/GitHubContext"
 import projectDescriptions from "../../data/projectDescriptions"
 import "./ProjectDetail.css"
 
 //components
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
-import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function ProjectDetail() {
     const [project, setProject] = useState({})
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
     const { id } = useParams()
+    const { repos, error } = useGitHub()
+
+    // Set current project
+    const setSelectedProject = () => {
+        // Filter through projects to find selected one
+        const selectedProject = repos.find(proj => proj.name === id)
+        setProject(selectedProject)
+    }
 
     // Convert project creation date into "month day, year" format
     const formatDate = (dateString) => {
         const date = new Date(dateString)
+
         return date.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'long', 
@@ -27,38 +33,14 @@ export default function ProjectDetail() {
     }
     
     useEffect(() => {
-        const loadRepos = async () => {
-            try {
-                setLoading(true)
-
-                const data = await fetchGitHubRepos()
-                const selectedProject = data.find(proj => proj.name === id) // Filter through projects to find selected one
-                
-                if (!selectedProject) {
-                    setError("Project does not exist")
-                } else {
-                    setProject(selectedProject)
-                    setError(null)
-                }
-            } catch (err) {
-                setError("Failed to load project")
-                console.error(err)
-            } finally {
-                setLoading(false)
-            }
-        }
-
-        loadRepos()
+        setSelectedProject()
     }, [id])
 
     return (
         <>
-            {loading ? (
-                <LoadingSpinner /> 
-            ) : (
-            error ? (
+            {error ? (
                 <p>{error}</p>
-            ) : 
+            ) : (
                 <div className="project-detail-container">
                     <ProjectCard 
                         title={project.name} 
