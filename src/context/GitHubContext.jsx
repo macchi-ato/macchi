@@ -5,7 +5,6 @@ const GitHubContext = createContext()
 
 export function GitHubProvider({ children, onLoaded }) {
     const [repos, setRepos] = useState([])
-    const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
     useEffect(() => {
@@ -18,7 +17,6 @@ export function GitHubProvider({ children, onLoaded }) {
                 setError("Failed to load projects")
                 console.error(err)
             } finally {
-                setLoading(false)
                 onLoaded?.()
             }
         }
@@ -27,7 +25,7 @@ export function GitHubProvider({ children, onLoaded }) {
     }, [])
 
     return (
-        <GitHubContext.Provider value={{ repos, loading, error }}>
+        <GitHubContext.Provider value={{ repos, error }}>
             {children}
         </GitHubContext.Provider>
     )
