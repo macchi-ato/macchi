@@ -22,23 +22,25 @@ export default function App() {
 
   return (
     <GitHubProvider onLoaded={() => setDataLoaded(true)}>
-      <LoadingScreen isLoading={!dataLoaded} />
+      {!dataLoaded ? (
+        <LoadingScreen isLoading={true} />
+      ) : (
+        <BrowserRouter>
+          <ScrollToTop />
+          <Nav />
 
-      <BrowserRouter>
-        <ScrollToTop />
-        <Nav />
+          <div className="routes-container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:id" element={<ProjectDetail />} />
+            </Routes>
+          </div>
 
-        <div className="routes-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:id" element={<ProjectDetail />} />
-          </Routes>
-        </div>
-
-        <Footer />
-      </BrowserRouter>
+          <Footer />
+        </BrowserRouter>
+      )}
     </GitHubProvider>
   )
 }
