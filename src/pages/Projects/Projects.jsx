@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react"
-import { fetchGitHubRepos } from "../../services/githubService"
+import { useGitHub } from "../../context/GitHubContext"
 import "./Projects.css"
 import { GrProjects } from "react-icons/gr"
 
@@ -8,27 +7,7 @@ import Project from "../../components/ProjectCard/ProjectCard"
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function Projects() {
-    const [loading, setLoading] = useState(true)
-    const [repos, setRepos] = useState([])
-    const [error, setError] = useState(null)
-
-    const loadRepos = async () => {
-        try {
-            setLoading(true)
-            const data = await fetchGitHubRepos()
-            setRepos(data)
-            setError(null)
-        } catch (err) {
-            setError("Failed to load projects. Please try again later.")
-            console.error(err)
-        } finally {
-            setLoading(false)
-        }
-    }
-
-    useEffect(() => {
-        loadRepos()
-    }, [])
+    const { repos, loading, error } = useGitHub()
 
     if (loading) {
         return (

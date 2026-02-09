@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import { fetchGitHubRepos } from "../../services/githubService"
+import { useGitHub } from "../../context/GitHubContext"
 import { FiMapPin, FiSunrise, FiClock, FiHeart } from "react-icons/fi"
 import "./Home.css"
 
@@ -10,27 +9,8 @@ import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 export default function Home() {
-    const [repos, setRepos] = useState([])
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
-
-    useEffect(() => {
-        const loadRepos = async () => {
-            try {
-                setLoading(true)
-                const data = await fetchGitHubRepos()
-                setRepos(data.slice(0, 2))
-                setError(null)
-            } catch (err) {
-                setError("Failed to load projects")
-                console.error(err)
-            } finally {
-                setLoading(false)
-            }
-        }
-
-        loadRepos()
-    }, [])
+    const { repos: allRepos, loading, error } = useGitHub()
+    const repos = allRepos.slice(0, 2)
 
     return (
         <div className="home-container">
