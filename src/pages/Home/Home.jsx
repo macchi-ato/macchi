@@ -5,11 +5,10 @@ import "./Home.css"
 
 //components
 import Project from "../../components/ProjectCard/ProjectCard"
-import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 export default function Home() {
-    const { repos: allRepos, loading, error } = useGitHub()
+    const { repos: allRepos, error } = useGitHub()
     const repos = allRepos.slice(0, 2)
 
     return (
@@ -39,14 +38,11 @@ export default function Home() {
                         <Link to="/projects" className="arrow-link">View All <span id="arrow">{`->`}</span></Link>
                     </div>
 
-                    {loading ? ( 
-                        <LoadingSpinner /> 
-                    ) : (
-                    error ? (
+                    {error ? (
                         <div className="home-projects-error">
                             <p>{error}</p>
                         </div>
-                    ) : <div className="projects">
+                    ) : ( <div className="projects">
                         {repos.map((repo) => (
                             <Project
                                 key={repo.id}
