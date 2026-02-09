@@ -1,19 +1,12 @@
 import { useGitHub } from "../../context/GitHubContext"
-import "./Projects.css"
 import { GrProjects } from "react-icons/gr"
+import "./Projects.css"
 
 // Project component
 import Project from "../../components/ProjectCard/ProjectCard"
-import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 export default function Projects() {
-    const { repos, loading, error } = useGitHub()
-
-    if (loading) {
-        return (
-            <LoadingSpinner />
-        )
-    }
+    const { repos, error } = useGitHub()
 
     if (error) {
         return (
