@@ -118,6 +118,7 @@
     justify-content: start;
     align-items: center;
     gap: calc(var(--gap-size) / 4);
+    margin-left: var(--gap-size);
     color: var(--color-primary);
     transition: 0.4s ease;
 }
