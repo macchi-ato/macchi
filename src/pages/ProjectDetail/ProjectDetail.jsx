@@ -1,4 +1,3 @@
-import { useState,useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import { FiGithub } from "react-icons/fi"
 import { RiArrowGoBackFill } from "react-icons/ri"
@@ -10,16 +9,11 @@ import "./ProjectDetail.css"
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
 
 export default function ProjectDetail() {
-    const [project, setProject] = useState({})
     const { id } = useParams()
     const { repos, error } = useGitHub()
 
-    // Set current project
-    const setSelectedProject = () => {
-        // Filter through projects to find selected one
-        const selectedProject = repos.find(proj => proj.name === id)
-        setProject(selectedProject)
-    }
+    // Filter through projects to find the selected one
+    const project = repos.find(repo => repo.name === id)
 
     // Convert project creation date into "month day, year" format
     const formatDate = (dateString) => {
@@ -31,10 +25,6 @@ export default function ProjectDetail() {
             day: '2-digit' 
         })
     }
-    
-    useEffect(() => {
-        setSelectedProject()
-    }, [id])
 
     return (
         <>
