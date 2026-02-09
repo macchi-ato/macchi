@@ -23,7 +23,7 @@ export default function App() {
   return (
     <GitHubProvider onLoaded={() => setDataLoaded(true)}>
       {!dataLoaded ? (
-        <LoadingScreen isLoading={true} />
+        <LoadingScreen />
       ) : (
         <BrowserRouter>
           <ScrollToTop />
