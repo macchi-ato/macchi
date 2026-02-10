@@ -26,12 +26,13 @@
     justify-content: space-between;
     align-items: end;
     width: 100%;
+    line-height: 1;
     padding-bottom: calc(var(--gap-size) / 4);
     border-bottom: 1px dashed var(--color-border);
 }
 
 .about-header h1 {
-    line-height: 1;
+    font-size: 1.4rem;
     word-spacing: -8px;
     margin: 0;
     color: var(--color-primary);
@@ -56,11 +57,5 @@
 @media (max-width: 1000px) {
     .about-container {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .about-header h1 {
-        font-size: 1.8rem;
     }
 }
