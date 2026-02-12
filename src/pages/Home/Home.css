@@ -163,7 +163,7 @@
     align-items: end;
     line-height: 1;
     padding-bottom: calc(var(--gap-size) / 4);
-    border-bottom: 2px dotted var(--color-border);
+    border-bottom: 1px dashed var(--color-border);
 }
 
 #projects-header {
