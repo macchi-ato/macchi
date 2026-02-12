@@ -5,7 +5,12 @@ import { getLanguageColor } from "../../utils/languageColors"
 
 export default function Project({ title, description, language, languages, disableHover }) {
     // Use languages array if available, otherwise use single language
-    const displayLanguages = languages && languages.length > 0 ? languages : (language ? [language] : [])
+    let displayLanguages = languages && languages.length > 0 ? languages : (language ? [language] : [])
+
+    // If JavaScript and TypeScript in the languages only display TypeScript
+    if (displayLanguages.includes("JavaScript") && displayLanguages.includes("TypeScript")) {
+        displayLanguages = displayLanguages.filter(lang => lang !== "JavaScript")
+    }
 
     return (
         <Link to={`/projects/${title}`} id="link-to-project">
