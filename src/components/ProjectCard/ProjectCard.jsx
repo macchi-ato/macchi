@@ -12,6 +12,10 @@ export default function Project({ title, description, language, languages, disab
         displayLanguages = displayLanguages.filter(lang => lang !== "JavaScript")
     }
 
+    // Capitalize first letter for project title
+    const formattedTitle = title[0].toUpperCase() + title.slice(1)
+    console.log(formattedTitle)
+
     return (
         <Link to={`/projects/${title}`} id="link-to-project">
             <div className={`project-card ${disableHover ? 'no-hover' : ''}`}>
@@ -20,7 +24,7 @@ export default function Project({ title, description, language, languages, disab
                 <div className="project-details">
                     <div className="project-header">
                         <GoRepo size={32} aria-hidden="true" />
-                        <h2>{title}</h2>
+                        <h2>{formattedTitle}</h2>
                     </div>
 
                     <p id="project-about">{description || "No description available."}</p>
