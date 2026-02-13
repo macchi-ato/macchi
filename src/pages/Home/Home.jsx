@@ -8,8 +8,11 @@ import Project from "../../components/ProjectCard/ProjectCard"
 import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 export default function Home() {
-    const { repos: allRepos, error } = useGitHub()
-    const repos = allRepos.slice(0, 2)
+    const { repos, error } = useGitHub()
+
+    const projects = repos.filter(repo => (
+        repo.name === "torus" || repo.name === "macchi"
+    ))
 
     return (
         <div className="home-container">
@@ -43,13 +46,13 @@ export default function Home() {
                             <p>{error}</p>
                         </div>
                     ) : ( <div className="projects">
-                        {repos.map((repo) => (
+                        {projects.map((project) => (
                             <Project
-                                key={repo.id}
-                                title={repo.name}
-                                description={repo.description}
-                                language={repo.language}
-                                languages={repo.languages}
+                                key={project.id}
+                                title={project.name}
+                                description={project.description}
+                                language={project.language}
+                                languages={project.languages}
                             />  
                         ))}
                         </div>
