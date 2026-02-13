@@ -14,7 +14,6 @@ export default function Project({ title, description, language, languages, disab
 
     // Capitalize first letter for project title
     const formattedTitle = title[0].toUpperCase() + title.slice(1)
-    console.log(formattedTitle)
 
     return (
         <Link to={`/projects/${title}`} id="link-to-project">
