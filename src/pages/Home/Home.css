@@ -280,11 +280,10 @@
     font-weight: 600;
     letter-spacing: -1px;
     word-spacing: -4px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .info-card:hover .info-title {
-    color: var(--color-primary);
     transform: scale(1.05);
 }
 
