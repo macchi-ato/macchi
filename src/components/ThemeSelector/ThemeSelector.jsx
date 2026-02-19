@@ -1,0 +1,47 @@
+import "./ThemeSelector.css"
+import { useTheme } from "../../context/ThemeContext"
+
+const THEME_DATA = {
+    sunset: {
+        label: "Sunset",
+        swatches: ["#242424", "#ce4257", "#ff7f51"],
+    },
+    sunrise: {
+        label: "Sunrise",
+        swatches: ["#fef9f0", "#ce4257", "#ff7f51"],
+    },
+    midnight: {
+        label: "Midnight",
+        swatches: ["#0d1b2a", "#4a9eff", "#7bb8ff"],
+    },
+}
+
+export default function ThemeSelector() {
+    const { theme, setTheme, themes } = useTheme()
+
+    return (
+        <>
+            <span className="info-label">Theme</span>
+            <div className="theme-options">
+                {themes.map((t) => (
+                    <button
+                        key={t}
+                        className={`theme-btn${theme === t ? " theme-btn--active" : ""}`}
+                        onClick={() => setTheme(t)}
+                    >
+                        <span className="theme-btn-name">{THEME_DATA[t].label}</span>
+                        <span className="theme-btn-swatches">
+                            {THEME_DATA[t].swatches.map((color, i) => (
+                                <span
+                                    key={i}
+                                    className="swatch"
+                                    style={{ backgroundColor: color }}
+                                />
+                            ))}
+                        </span>
+                    </button>
+                ))}
+            </div>
+        </>
+    )
+}

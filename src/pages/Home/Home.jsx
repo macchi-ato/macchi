@@ -6,6 +6,7 @@ import "./Home.css"
 //components
 import Project from "../../components/ProjectCard/ProjectCard"
 import ProfileCard from "../../components/ProfileCard/ProfileCard"
+import ThemeSelector from "../../components/ThemeSelector/ThemeSelector"
 
 export default function Home() {
     const { repos, error } = useGitHub()
@@ -90,8 +91,7 @@ export default function Home() {
 
                     <div className="info-card">
                         <div className="wip-indicator"></div>
-                        <span className="info-label">Theme Selector</span>
-                        <span className="info-title">Coming Soon</span>
+                        <ThemeSelector />
                     </div>
                 </section>
             </main>
