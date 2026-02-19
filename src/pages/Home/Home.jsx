@@ -6,6 +6,7 @@ import "./Home.css"
 //components
 import Project from "../../components/ProjectCard/ProjectCard"
 import ProfileCard from "../../components/ProfileCard/ProfileCard"
+import ThemeSelector from "../../components/ThemeSelector/ThemeSelector"
 
 export default function Home() {
     const { repos, error } = useGitHub()
@@ -61,37 +62,31 @@ export default function Home() {
 
                 <section className="home-extra">
                     <div className="info-card">
-                        <div className="wip-indicator"></div>
                         <FiMapPin size={32} aria-hidden="true" className="info-icon" />
                         <span className="info-label">Location</span>
                         <span className="info-title">United States</span>
                     </div>
 
                     <div className="info-card">
-                        <div className="wip-indicator"></div>
                         <FiSunrise size={32} aria-hidden="true" className="info-icon" />
                         <span className="info-label">Status</span>
                         <span className="info-title">Early Bird</span>
                     </div>
 
                     <div className="info-card">
-                        <div className="wip-indicator"></div>
                         <FiClock size={32} aria-hidden="true" className="info-icon" />
                         <span className="info-label">Response Time</span>
                         <span className="info-title">Within 24h</span>
                     </div>
 
                     <div className="info-card">
-                        <div className="wip-indicator"></div>
                         <FiHeart size={32} aria-hidden="true" className="info-icon" />
                         <span className="info-label">Created with</span>
                         <span className="info-title">React and ❤️</span>
                     </div>
 
                     <div className="info-card">
-                        <div className="wip-indicator"></div>
-                        <span className="info-label">Theme Selector</span>
-                        <span className="info-title">Coming Soon</span>
+                        <ThemeSelector />
                     </div>
                 </section>
             </main>

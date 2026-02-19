@@ -9,7 +9,7 @@ footer {
     padding: var(--gap-size);
     border-radius: 4px;
     color: var(--color-highlight);
-    background: rgb(18, 18, 18);
+    background: var(--color-footer-bg);
     position: relative;
     overflow: hidden;
 }
@@ -23,6 +23,10 @@ footer::before {
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--color-secondary), var(--color-primary), var(--color-secondary), transparent);
     opacity: 0.6;
+}
+
+footer span {
+    font-weight: 600;
 }
 
 .footer-link {

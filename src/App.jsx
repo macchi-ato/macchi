@@ -9,6 +9,7 @@ import LoadingScreen from "./components/LoadingScreen/LoadingScreen.jsx"
 
 //context
 import { GitHubProvider, useGitHub } from "./context/GitHubContext.jsx"
+import { ThemeProvider } from "./context/ThemeContext.jsx"
 
 //pages
 import Home from "./pages/Home/Home.jsx"
@@ -46,8 +47,10 @@ function AppContent() {
 
 export default function App() {
   return (
-    <GitHubProvider>
-      <AppContent />
-    </GitHubProvider>
+    <ThemeProvider>
+      <GitHubProvider>
+        <AppContent />
+      </GitHubProvider>
+    </ThemeProvider>
   )
 }
