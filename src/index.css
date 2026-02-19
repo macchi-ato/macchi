@@ -8,8 +8,8 @@
   --color-bg: #242424;
   --color-primary: #ce4257;
   --color-secondary: #ff7f51;
+  --color-accent: #faedcd;
   --color-border: rgba(245, 235, 224, 0.2);
-
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
   font-family: 'JetBrains Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,6 +30,7 @@
   --color-bg: #242424;
   --color-primary: #ce4257;
   --color-secondary: #ff7f51;
+  --color-accent: #faedcd;
   --color-border: rgba(245, 235, 224, 0.2);
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -39,9 +40,10 @@
   --color-text: #3d2b1f;
   --color-highlight: #1a1209;
   --color-bg: #fff0d3;
-  --color-primary: #ce4257;
+  --color-primary: #cb203a;
   --color-secondary: #ff7f51;
-  --color-border: rgba(60, 40, 20, 0.5);
+  --color-accent: #ffde8b;
+  --color-border: rgba(60, 40, 20, 0.4);
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color-scheme: light;
 }
@@ -52,6 +54,7 @@
   --color-bg: #0d1b2a;
   --color-primary: #0077ff;
   --color-secondary: #61abff;
+  --color-accent: #cfe7fb;
   --color-border: rgba(74, 158, 255, 0.2);
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
