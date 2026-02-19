@@ -6,6 +6,7 @@
   --color-text: #faedcd;
   --color-highlight: #fefae0;
   --color-bg: #242424;
+  --color-footer-bg: rgb(18, 18, 18);
   --color-primary: #ce4257;
   --color-secondary: #ff7f51;
   --color-accent: #faedcd;
@@ -40,6 +41,7 @@
   --color-text: #3d2b1f;
   --color-highlight: #1a1209;
   --color-bg: #fff0d3;
+  --color-footer-bg: #ffde8b;
   --color-primary: #cb203a;
   --color-secondary: #ff7f51;
   --color-accent: #ffde8b;

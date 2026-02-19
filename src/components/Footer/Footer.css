@@ -8,8 +8,8 @@ footer {
     box-sizing: border-box;
     padding: var(--gap-size);
     border-radius: 4px;
-    color: #fefae0;
-    background: rgb(18, 18, 18);
+    color: var(--color-highlight);
+    background: var(--color-footer-bg);
     position: relative;
     overflow: hidden;
 }
@@ -34,7 +34,7 @@ footer span {
     justify-content: center;
     align-items: center;
     gap: calc(var(--gap-size) / 2);
-    color: #fefae0;
+    color: var(--color-highlight);
     text-decoration: none;
     transition: color 0.3s ease;
 }
