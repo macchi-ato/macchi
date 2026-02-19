@@ -41,7 +41,7 @@
   --color-bg: #fff0d3;
   --color-primary: #ce4257;
   --color-secondary: #ff7f51;
-  --color-border: rgba(60, 40, 20, 0.3);
+  --color-border: rgba(60, 40, 20, 0.5);
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color-scheme: light;
 }
@@ -55,6 +55,11 @@
   --color-border: rgba(74, 158, 255, 0.2);
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
+}
+
+/* Smooth theme transitions */
+*, *::before, *::after {
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease, box-shadow 1s ease;
 }
 
 body {
