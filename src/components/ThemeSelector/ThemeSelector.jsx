@@ -9,11 +9,11 @@ const THEME_DATA = {
     },
     sunrise: {
         label: "Sunrise",
-        swatches: ["#fef9f0", "#ce4257", "#ff7f51"],
+        swatches: ["#fff0d3", "#cb203a", "#ff7f51"],
     },
     midnight: {
         label: "Midnight",
-        swatches: ["#0d1b2a", "#4a9eff", "#7bb8ff"],
+        swatches: ["#0d1b2a", "#0077ff", "#61abff"],
     },
 }
 
