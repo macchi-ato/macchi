@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import { useGitHub } from "../../context/GitHubContext"
 import { FiMapPin, FiSunrise, FiClock, FiHeart } from "react-icons/fi"
-import { FaPalette } from "react-icons/fa"
 import "./Home.css"
 
 //components
@@ -92,7 +91,6 @@ export default function Home() {
 
                     <div className="info-card">
                         <div className="wip-indicator"></div>
-                        <FaPalette size={32} aria-hidden="true" className="info-icon" />
                         <ThemeSelector />
                     </div>
                 </section>

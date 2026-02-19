@@ -1,5 +1,6 @@
 import "./ThemeSelector.css"
 import { useTheme } from "../../context/ThemeContext"
+import { FaPalette } from "react-icons/fa"
 
 const THEME_DATA = {
     sunset: {
@@ -21,26 +22,32 @@ export default function ThemeSelector() {
 
     return (
         <>
-            <span className="info-label">Theme</span>
-            <div className="theme-options">
-                {themes.map((t) => (
-                    <button
-                        key={t}
-                        className={`theme-btn${theme === t ? " theme-btn--active" : ""}`}
-                        onClick={() => setTheme(t)}
-                    >
-                        <span className="theme-btn-name">{THEME_DATA[t].label}</span>
-                        <span className="theme-btn-swatches">
-                            {THEME_DATA[t].swatches.map((color, i) => (
-                                <span
-                                    key={i}
-                                    className="swatch"
-                                    style={{ backgroundColor: color }}
-                                />
-                            ))}
-                        </span>
-                    </button>
-                ))}
+            <div className="theme-selector">
+                <div className="theme-selector-header">
+                    <FaPalette size={32} aria-hidden="true" className="info-icon" />
+                    <span className="info-label">Theme</span>
+                </div>
+
+                <div className="theme-options">
+                    {themes.map((t) => (
+                        <button
+                            key={t}
+                            className={`theme-btn${theme === t ? " theme-btn--active" : ""}`}
+                            onClick={() => setTheme(t)}
+                        >
+                            <span className="theme-btn-name">{THEME_DATA[t].label}</span>
+                            <span className="theme-btn-swatches">
+                                {THEME_DATA[t].swatches.map((color, i) => (
+                                    <span
+                                        key={i}
+                                        className="swatch"
+                                        style={{ backgroundColor: color }}
+                                    />
+                                ))}
+                            </span>
+                        </button>
+                    ))}
+                </div>
             </div>
         </>
     )
