@@ -16,11 +16,45 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--color-text);
   background-color: var(--color-bg);
   
   scroll-behavior: smooth;
+}
+
+/* Theme Palettes */
+[data-theme="sunset"] {
+  --color-text: #faedcd;
+  --color-highlight: #fefae0;
+  --color-bg: #242424;
+  --color-primary: #ce4257;
+  --color-secondary: #ff7f51;
+  --color-border: rgba(245, 235, 224, 0.2);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
+}
+
+[data-theme="sunrise"] {
+  --color-text: #3d2b1f;
+  --color-highlight: #1a1209;
+  --color-bg: #fef9f0;
+  --color-primary: #ce4257;
+  --color-secondary: #ff7f51;
+  --color-border: rgba(60, 40, 20, 0.15);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  color-scheme: light;
+}
+
+[data-theme="midnight"] {
+  --color-text: #a8c8e8;
+  --color-highlight: #e8f4fd;
+  --color-bg: #0d1b2a;
+  --color-primary: #4a9eff;
+  --color-secondary: #7bb8ff;
+  --color-border: rgba(74, 158, 255, 0.2);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
 }
 
 body {
