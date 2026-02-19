@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react"
 
-const THEMES = ["sunset", "sunrise", "midnight"]
+const THEMES = ["sunrise", "sunset", "midnight"]
 const STORAGE_KEY = "macchi-theme"
 const DEFAULT_THEME = "sunset"
 
