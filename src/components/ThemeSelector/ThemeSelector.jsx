@@ -18,7 +18,7 @@ const THEME_DATA = {
 }
 
 export default function ThemeSelector() {
-    const { theme, setTheme, themes } = useTheme()
+    const { setTheme, themes } = useTheme()
 
     return (
         <>
@@ -32,7 +32,7 @@ export default function ThemeSelector() {
                     {themes.map((t) => (
                         <button
                             key={t}
-                            className={`theme-btn${theme === t ? " theme-btn--active" : ""}`}
+                            className="theme-btn"
                             onClick={() => setTheme(t)}
                         >
                             <span className="theme-btn-name">{THEME_DATA[t].label}</span>
