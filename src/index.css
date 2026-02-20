@@ -62,9 +62,9 @@
   color-scheme: dark;
 }
 
-/* Smooth theme transitions */
-*, *::before, *::after {
-  transition: background-color 1s ease, color 1s ease, border-color 1s ease, box-shadow 1s ease;
+/* Smooth theme transitions (only active during theme switch) */
+.is-theme-changing *, .is-theme-changing *::before, .is-theme-changing *::after {
+  transition: all 0.6s ease;
 }
 
 body {

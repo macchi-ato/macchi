@@ -20,7 +20,12 @@ export function ThemeProvider({ children }) {
 
     function setTheme(newTheme) {
         if (THEMES.includes(newTheme)) {
+            document.documentElement.classList.add("is-theme-changing")
             setThemeState(newTheme)
+
+            setTimeout(() => {
+                document.documentElement.classList.remove("is-theme-changing")
+            }, 600)
         }
     }
 
