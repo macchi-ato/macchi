@@ -21,6 +21,6 @@ npm install
 npm run dev
 ```
 
-## Feedback
+---
 
 Thanks for stopping by! Any form of constructive criticism is welcome.
