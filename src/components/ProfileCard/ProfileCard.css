@@ -37,7 +37,7 @@
     height: 100%;
     border-radius: 4px;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .profile-image:hover img {
