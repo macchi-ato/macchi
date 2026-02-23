@@ -30,6 +30,12 @@ const projectDescriptions = {
         "The biggest challenge was reliably handling large files, because working with blob data was a first for me. Looking back, the way I process that data isn't very efficient, but it works and it taught me a lot about dealing with binary data in a full-stack context.",
         "I'm still very proud of this project because it represents a turning point where I became comfortable thinking like a full-stack developer instead of just someone writing code.",
         "The platform is functional and complete but not currently hosted. You can find out how to run it locally on GitHub."
+    ],
+    "ato" : [
+        "This project in currently in development and not yet hosted.",
+        "An extension to my portfolio website to showcase the 3D models I've created in Blender.",
+        "I decided to make this a separate project rather than baking it into my portfolio site because I didn't want to force all that assets on someone who just wants to view my portfolio. If they're interested in my 3D work, they can choose to visit it while keeping the overhead separate.",
+        "I also want to mention that I am not an expert or claim to be one. This is simply a hobby of mine that I started because one day I would like to create a game with my own assets.",
     ]
 }
 
