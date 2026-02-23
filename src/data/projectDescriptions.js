@@ -25,9 +25,10 @@ const projectDescriptions = {
     ],
     "torus" : [
         "My undergrad capstone project.",
-        "The idea was to create a place where artists could upload, save and view other assets directly in the browser. I wanted the platform to be something like Art Station, but specifically for 3D artists.",
-        "I built the frontend with React and the backend with ASP.NET Core, handling everything from authentication and asset metadata to file storage and API design. The biggest challenges was reliably handling large files, because handling blob data was a first for me.",
-        "Like most things I build, I see plenty of areas I’d approach differently today, but I'm still very proud of this project because it represents a turning point where I became comfortable thinking like a full-stack developer instead of just someone writing code.",
+        "The idea was to create a place where artists could upload, save, and view 3D assets directly in the browser. I wanted the platform to be something like ArtStation, but specifically for 3D artists.",
+        "This was a solo project that took about a month and a half to complete. I built the frontend with React, using React Three Fiber for the browser 3D viewer, and the backend with ASP.NET Core, handling everything from authentication and asset metadata to file storage and API design.",
+        "The biggest challenge was reliably handling large files, because working with blob data was a first for me. Looking back, the way I process that data isn't very efficient, but it works and it taught me a lot about dealing with binary data in a full-stack context.",
+        "I'm still very proud of this project because it represents a turning point where I became comfortable thinking like a full-stack developer instead of just someone writing code.",
         "The platform is functional and complete but not currently hosted. You can find out how to run it locally on GitHub."
     ]
 }
