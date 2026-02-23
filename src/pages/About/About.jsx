@@ -13,7 +13,7 @@ export default function About() {
             <main className="about-content">
                 <div className="about-header">
                     <h1>Martin Vidal Garibay</h1>
-                    <span title="last updated">February 10, 2026</span>
+                    <span title="last updated">February 23, 2026</span>
                 </div>
 
                 <p>I'm a recent Software Engineering graduate with a focus on full-stack development.</p>
