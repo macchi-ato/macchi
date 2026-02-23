@@ -9,9 +9,11 @@
 
 const projectDescriptions = {
     "dotfiles" : [
-        'Obligatory "I use arch btw!"',
-        "These dotfiles are heavily based on someone else's configuration as I pointed out on github. However, I have made enough changes that I finally feel comfortable calling it my own.",
-        "There is nothing impressive here or much to say about it, I even considered omitting this repo, but to this day, tweaking my system is still something I very much enjoy, so I'm happy to include it as one of my projects."
+        '"I use arch btw!"',
+        "These dotfiles started as a copy paste of someone else's config (who I link in the GitHub repo), but at this point I've changed so much about them through countless tweaks and revisions that I'm happy to call them my own",
+        "My setup revolves around Hyprland and Waybar. Everything is minimal and I only keep the tools I need to program and nothing more.",
+        "I like to know exactly what's on my system. I hate clutter, so having full control over every piece of my environment is the reason why I use Arch.",
+        "I considered omitting this repo, but to this day, tweaking my system is still something I very much enjoy, so I'm happy to include it as one of my projects."
     ],
     "macchi" : [
         "My first porfolio website.",
