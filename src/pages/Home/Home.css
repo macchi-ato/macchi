@@ -252,6 +252,23 @@
     transform: scale(1.05);
 }
 
+#art-btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 8px 24px;
+    color: var(--color-highlight);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#art-btn:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
 @media (max-width: 1200px) {
     .home-container {
         grid-template-columns: 1fr;

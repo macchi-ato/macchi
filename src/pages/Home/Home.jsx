@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useGitHub } from "../../context/GitHubContext"
 import { FiMapPin, FiSunrise, FiClock, FiHeart } from "react-icons/fi"
+import { IoCubeOutline } from "react-icons/io5"
 import "./Home.css"
 
 //components
@@ -80,9 +81,9 @@ export default function Home() {
                     </div>
 
                     <div className="info-card">
-                        <FiHeart size={32} aria-hidden="true" className="info-icon" />
-                        <span className="info-label">Created with</span>
-                        <span className="info-title">React and ❤️</span>
+                        <IoCubeOutline size={40} aria-hidden="true" className="info-icon" />
+                        <span className="info-label">3D Art</span>
+                        <Link to="https://ato-1a2.pages.dev/" target="_blank" id="art-btn">View</Link>
                     </div>
 
                     <div className="info-card">
