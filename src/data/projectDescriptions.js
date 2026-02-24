@@ -32,10 +32,9 @@ const projectDescriptions = {
         "The platform is functional and complete but not currently hosted. You can find out how to run it locally on GitHub."
     ],
     "ato" : [
-        "This project in currently in development and not yet hosted.",
         "An extension to my portfolio website to showcase the 3D models I've created in Blender.",
         "I decided to make this a separate project rather than baking it into my portfolio site because I didn't want to force all that assets on someone who just wants to view my portfolio. If they're interested in my 3D work, they can choose to visit it while keeping the overhead separate.",
-        "I also want to mention that I am not an expert or claim to be one. This is simply a hobby of mine that I started because one day I would like to create a game with my own assets.",
+        "I also want to mention that I am not an expert or claim to be one, so don't expect anything crazy! This is simply a hobby of mine that I started because one day I would like to create a game with my own assets.",
     ]
 }
 
