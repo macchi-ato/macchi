@@ -35,6 +35,12 @@ const projectDescriptions = {
         "An extension to my portfolio website to showcase the 3D models I've created in Blender.",
         "I decided to make this a separate project rather than baking it into my portfolio site because I didn't want to force all that assets on someone who just wants to view my portfolio. If they're interested in my 3D work, they can choose to visit it while keeping the overhead separate.",
         "I also want to mention that I am not an expert or claim to be one, so don't expect anything crazy! This is simply a hobby of mine that I started because one day I would like to create a game with my own assets.",
+    ],
+    "aptt" : [
+        "Mobile app for keeping track of academic terms, courses, and assessments.",
+        "This was my first dive into mobile development and I chose .NET MAUI because I wanted something cross-platform without having to learn two completely separate ecosystems at once. I already had some familiarity with the .NET ecosystem from other projects, so it felt like a good starting point.",
+        "The app follows a pretty straightforward structure. Terms contain courses, courses contain assessments, but getting that structure to feel intuitive to navigate was something that I had to put in more thought than expected. It's one of those things where the logic is simple but the flow matters so much when you're actually using it.",
+        "It's not a complicated app, but it gave me a solid foundation in mobile development and I would love to explore more of what the platform can do in the future."
     ]
 }
 
