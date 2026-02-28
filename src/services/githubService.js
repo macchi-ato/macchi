@@ -1,11 +1,11 @@
 const GITHUB_USERNAME = 'macchi-ato'
 const CACHE_KEY = 'github_repos'
 const CACHE_TIMESTAMP_KEY = 'github_repos_timestamp'
-const CACHE_DURATION = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
+const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000 // 7 days in milliseconds
 
 /**
  * Fetches GitHub repositories
- * Uses localStorage caching with 3 days expiration
+ * Uses localStorage caching with 7 days expiration
  */
 export async function fetchGitHubRepos() {
     try {
