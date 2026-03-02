@@ -21,7 +21,7 @@ export default function About() {
                 <p>This fall, I'll be continuing my education at Georgia Tech to deepen my understanding of computing systems, while keeping my primary focus on full-time industry work.</p>
                 <p>Besides programming, I like playing pickleball, video games, going on walks with my dog, and sometimes creating art with ink or 3D in Blender.</p>
                 <p>Thanks for stopping by — feel free to reach out :)</p>
-                <p>P.S. I'm not a dog! I just decided to use a picture of my dog "Jinkay" until I get a professional picture taken to use.</p>
+                <p>P.S. I'm not a dog! I just decided to use a picture of my dog "Jinkay" as a placeholder for now.</p>
             </main>
         </div>
     )
