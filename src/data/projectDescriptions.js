@@ -10,7 +10,7 @@
 const projectDescriptions = {
     "dotfiles" : [
         '"I use arch btw!"',
-        "These dotfiles started as a copy paste of someone else's config (who I link in the GitHub repo), but at this point I've changed so much about them through countless tweaks and revisions that I'm happy to call them my own",
+        "These config files take huge inspiration from other people's work (links in the GitHub repo), but at this point I've changed so much about them through countless tweaks and revisions that I'm happy to call them my own",
         "My setup revolves around Hyprland and Waybar. Everything is minimal and I only keep the tools I need to program and nothing more.",
         "I like to know exactly what's on my system. I hate clutter, so having full control over every piece of my environment is the reason why I use Arch.",
         "I considered omitting this repo, but to this day, tweaking my system is still something I very much enjoy, so I'm happy to include it as one of my projects."
