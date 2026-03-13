@@ -11,6 +11,7 @@ export const getLanguageColor = (language) => {
         C: "#555555",
         'C++': "#f34b7d",
         Shell: "#89e051",
+        QML: "#1eb600",
     }
     
     return colors[language] || "#8b949e" // Default color
